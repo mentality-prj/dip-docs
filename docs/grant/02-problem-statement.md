@@ -1,48 +1,83 @@
 # Problem Statement
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
-- Status: Draft
+- Owner: Research Lead
+- Contributors: Product, Data Science, Clinical and Security stakeholders
+- Version: 0.2
+- Last Updated: 2026-08-01
+- Status: Draft for research framing
 
 ## Purpose
-Define unmet needs in mental health, enterprise analytics, explainable AI, and personalization.
+Формалізувати проблему, яку вирішує спільний проєкт Dzvin.co + DIP, у чотирьох вимірах: mental health, enterprise analytics, explainable AI, personalization.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Problem 1: Mental Wellbeing Signal Fragmentation
+Організації та користувачі мають багато окремих індикаторів (mood, stress, energy, focus, psychometric snapshots), але не мають інтегрованого decision layer, який:
+- зводить сигнали до послідовного ризик-профілю;
+- пояснює, чому саме такий висновок;
+- прив'язує висновок до конкретних дій.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+Наслідок: управлінські та індивідуальні рішення часто реактивні, а не превентивні.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Problem 2: Enterprise Analytics Without Actionability
+У B2B-сценаріях аналітика часто завершується дашбордом, а не керованою дією.
+Типовий розрив:
+- є метрика підвищеного стресу;
+- немає формалізованого decision policy, яка перетворює це на пріоритетну рекомендацію;
+- немає вбудованого контролю якості рішень у часі.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+Наслідок: низький вплив аналітики на операційні зміни.
 
-## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
+## Problem 3: Explainability and Trust Gap in AI Decisions
+AI-рекомендації в чутливих доменах не приймаються без пояснення, confidence і auditability.
+Критичні прогалини в типових системах:
+- відсутність rule trace або feature-level rationale;
+- неможливість перевірити відтворюваність рішення;
+- слабка governance-модель для fallback, overrides і policy control.
 
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+Наслідок: обмежена довіра, складність аудиту та підвищений комплаєнс-ризик.
+
+## Problem 4: Personalization vs Robustness Trade-off
+Персоналізація покращує релевантність, але підвищує складність валідації:
+- baseline користувача та команди динамічні;
+- моделі можуть дрейфувати;
+- fixed-threshold rule sets деградують на різних популяціях.
+
+Наслідок: без adaptive design система або надто загальна, або нестабільна.
+
+## Root Causes
+- Змішування platform intelligence і application logic в одному кодовому шарі.
+- Недостатня стандартизація decision artifacts (feature set, trace, confidence, policy signal).
+- Відсутність єдиного research-to-production контуру.
+
+## Current Baseline (Verified in Existing Stack)
+- Є production-oriented бекенд Dzvin.co з B2C/B2B/R&D потоками.
+- Є Decision Support модуль з deterministic rules, burnout index, impact estimation, change tracking.
+- Є online evaluation, policy control, trust thresholds, diagnostics surfaces.
+- Є окремий DIP репозиторій з API, workflow/rule execution та decision audit traces.
+
+Це створює стартову інфраструктуру, але не закриває повністю наукові питання персоналізації, causal effect інтервенцій та зовнішньої валідності.
+
+## Target Problem Resolution
+Потрібна architecture-level відповідь:
+- DIP як platform core для уніфікації rules/ML/explainability;
+- Dzvin.co як validated first domain implementation;
+- єдиний R&D протокол для експериментів, статистики, етики та відтворюваності.
+
+## Evidence Gaps to Close in R&D Phase
+- Наскільки hybrid rule+ML стабільніший за single-paradigm підходи.
+- Який вплив explainability на adoption та quality of decisions.
+- Які режими персоналізації дають приріст без втрати robustness.
+- Яка межа переносимості підходу між доменами.
+
+## Scope Boundaries
+- In scope: decision intelligence для wellbeing і enterprise risk analytics.
+- Out of scope: клінічний діагноз як медичний виріб у цьому етапі.
+- Out of scope: повністю автономні high-impact рішення без human review.
+
+## Success Criteria
+- Проблема описана у вимірюваних термінах (inputs, decisions, outcomes).
+- Кожна підпроблема має відповідний RQ та validation protocol.
+- Визначено, які claims є operational, а які наукові.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 01-vision.md, 05-research-questions.md, 06-methodology.md, 25-evaluation.md
