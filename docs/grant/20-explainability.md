@@ -1,48 +1,71 @@
 # Explainability
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Explainable AI Lead
+- Contributors: Product Research, ML Team, Decision Science Team
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define XAI methods, user-facing explanations, and limits.
+Визначити explainability framework для рішень DIP і представлення пояснень у Dzvin.co для різних аудиторій.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Explainability Goals
+- Пояснення мають допомагати приймати кращі рішення, а не лише пояснювати модель.
+- Пояснення мають бути безпечними й недіагностичними.
+- Пояснення мають бути auditable та відтворюваними.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Audience Layers
+- End-user: короткі, підтримуючі, non-clinical пояснення.
+- Manager/HR: агреговані фактори ризику та рекомендовані дії.
+- Admin/Research: детальні traces, confidence, policy source.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Explanation Types
+- Rule trace: які умови спрацювали.
+- Feature rationale: які сигнали внесли найбільший вклад.
+- Confidence context: рівень невизначеності.
+- Policy rationale: чому обрано конкретний decision path.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Minimum Explanation Contract
+- decision_id
+- explanation_summary
+- top_contributing_signals
+- confidence_level
+- policy_variant
+- timestamp
+- model_or_rule_version
+
+## Safety Constraints
+- Заборонені категоричні клінічні формулювання.
+- Обов'язкові обмеження інтерпретації (limitations).
+- Escalation path для високого ризику і низької впевненості.
+
+## Explainability Quality Criteria
+- Faithfulness: пояснення відповідає реальному decision flow.
+- Completeness: пояснення покриває ключові сигнали.
+- Actionability: пояснення веде до зрозумілої дії.
+- Stability: малі зміни у вході не створюють хаотичних пояснень.
+
+## Technical Methods (Planned)
+- Rule-native traces (implemented baseline).
+- Contribution-based ranking for ML signals.
+- Counterfactual-style "what changed" summaries.
+- Segment-aware explanation templates.
+
+## Validation Plan
+- User comprehension testing.
+- Trust uplift analysis vs no-explanation baseline.
+- Error detection support study (чи помічають користувачі невпевнені рішення).
+
+## Risks
+- Over-explanation і когнітивне перевантаження.
+- False sense of certainty.
+- Leakage of sensitive attributes in explanations.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Кожне high-impact рішення має explainability payload.
+- Пояснення відповідають role-based policy.
+- Пояснення проходять safety review і user validation.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 16-decision-engine.md, 22-uncertainty.md, 29-explainability-validation.md, 37-ethics.md

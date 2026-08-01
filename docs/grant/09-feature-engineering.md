@@ -1,48 +1,73 @@
 # Feature Engineering
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: ML Engineering Lead
+- Contributors: Data Platform, Research Scientists
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define feature catalog, computation logic, and quality controls.
+Визначити підхід до проєктування, обчислення і валідації ознак для decision support та прогнозних моделей.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Design Principles
+- Кожна feature має бізнес-семантику.
+- Формула має бути однозначною і відтворюваною.
+- Ознака має бути доступною на inference time.
+- Вразливі ознаки проходять bias review.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Canonical Feature Card
+- feature_key
+- description
+- type (numeric/categorical/boolean/text-derived)
+- formula
+- window (1d/7d/30d)
+- source
+- null policy
+- expected range
+- drift sensitivity
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Feature Families
+- Trend features: slope, moving averages, volatility.
+- Behavioral stability features: streaks, variance, recovery time.
+- Psychometric aggregates: standardized subscales.
+- Engagement features: recency/frequency/completion ratios.
+- Team context features: peer baseline deltas.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Example Candidate Features
+- stress_average_7d
+- mood_trend_14d
+- energy_volatility_30d
+- checkin_consistency_14d
+- high_risk_team_ratio_30d
+- psychometric_delta_30d
+
+## Feature Transformation Rules
+- Normalization by bounded scales.
+- Winsorization for extreme outliers where justified.
+- Encoding policy for low-cardinality categories.
+- Missingness indicators for informative nulls.
+
+## Data Leakage Controls
+- Заборона використання future information.
+- Time-based split discipline.
+- Strict separation of label-period and feature-period.
+
+## Feature Selection Strategy
+- Baseline deterministic set.
+- Model-driven relevance ranking.
+- Stability selection across cohorts.
+- Human review for interpretability and ethics.
+
+## Monitoring
+- Distribution drift per feature.
+- Missingness drift.
+- Correlation drift for critical feature pairs.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Для кожної production feature є feature card.
+- Ознаки проходять leakage check і drift baseline check.
+- Всі моделі мають зафіксований список feature versions.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 08-dataset-specification.md, 17-feature-store.md, 22-uncertainty.md, 26-metrics.md
