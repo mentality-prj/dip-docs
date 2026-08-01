@@ -1,48 +1,47 @@
 # DIP Product
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Platform Product Lead
+- Contributors: Platform Engineering, ML Engineering, Developer Relations
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Describe platform modules, interfaces, and operating model.
+Описати DIP як незалежний platform product для reusable decision intelligence capabilities.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Product Scope
+- Decision/workflow execution.
+- Rule/ML/policy orchestration.
+- Explainability and audit artifacts.
+- Experimentation and lifecycle integrations.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Target Users
+- Internal product teams (first: Dzvin.co).
+- External integrators and partners.
+- Research and innovation teams.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Platform Value
+- Reusability across domains.
+- Faster controlled rollout of decision logic.
+- Built-in governance and observability.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Capability Modules
+- Core API and tenant controls.
+- Decision engine.
+- Prediction and risk signal composition.
+- Registry/tracking integration points.
+- Plugin extension model.
+
+## Adoption Model
+- API-first consumption.
+- Adapter-based domain integration.
+- Progressive capability activation by maturity level.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- DIP capability map затверджено як platform contract.
+- Є clear boundary: what stays in DIP vs application layer.
+- Platform roadmap мапиться на WP milestones.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 15-dip-architecture.md, 16-decision-engine.md, 19-plugin-sdk.md

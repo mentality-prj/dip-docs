@@ -1,48 +1,50 @@
 # API
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: API Lead
+- Contributors: Platform Team, Application Team, QA
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define API surface, contracts, versioning, and constraints.
+Визначити API-контракти, версіонування і вимоги до надійності для DIP та інтеграційних поверхонь Dzvin.co.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## API Surface Classes
+- Decision execution APIs
+- Prediction/risk APIs
+- Workflow management APIs
+- Diagnostics/admin APIs
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Contract Standards
+- Explicit schema definitions.
+- Strong validation and typed errors.
+- Stable semantic fields for downstream analytics.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Versioning Strategy
+- Major for breaking changes.
+- Minor for additive changes.
+- Sunset notices for deprecated versions.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Non-Functional Requirements
+- Latency SLO by endpoint class.
+- Availability objectives.
+- Rate limits and abuse protection.
+
+## Security and Access
+- Authenticated access only.
+- Role/permission-scoped operations.
+- Audit fields for sensitive calls.
+
+## Observability
+- Request IDs and trace propagation.
+- Structured logs.
+- Endpoint-level metrics and error taxonomy.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- OpenAPI specs актуальні і покривають critical endpoints.
+- Version compatibility documented.
+- API quality gates включені в CI/CD.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 33-integration.md, 35-security.md, 15-dip-architecture.md

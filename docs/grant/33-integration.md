@@ -1,48 +1,46 @@
 # Integration
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Integration Architect
+- Contributors: DIP Team, Dzvin.co Team, Security Team
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Describe data and service integration between DIP and Dzvin.co.
+Описати інтеграційну модель між Dzvin.co і DIP для стабільного та безпечного обміну decision signals.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Integration Principles
+- API-only coupling.
+- No direct shared database access.
+- Tenant-scoped requests.
+- Contract versioning and backward compatibility.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Core Flows
+- Feature payload and context submission.
+- Decision evaluation and explanation retrieval.
+- Async job handling for heavy workflows.
+- Diagnostics and policy telemetry integration.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Contract Governance
+- Versioned request/response schemas.
+- Compatibility matrix by release.
+- Deprecation policy with migration windows.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Security Requirements
+- AuthN/AuthZ per surface.
+- Scoped API keys/tokens.
+- Request integrity and audit logging.
+
+## Reliability Requirements
+- Timeout/retry policy.
+- Idempotency for critical operations.
+- Fallback behavior on DIP unavailability.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Integration contract formally documented and tested.
+- Failure modes covered by fallback and alerting.
+- Compatibility checks part of release gates.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 34-api.md, 35-security.md, 15-dip-architecture.md
