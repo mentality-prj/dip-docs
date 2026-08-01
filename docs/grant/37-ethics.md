@@ -1,48 +1,56 @@
 # Ethics
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Ethics Lead
+- Contributors: Clinical Advisors, Research Team, Product Team
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define ethics governance, review process, and safeguards.
+Встановити етичні принципи і процеси контролю для рішень Dzvin.co + DIP у чутливому домені mental wellbeing.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Ethical Principles
+- Beneficence: максимізація користі для користувачів і організацій.
+- Non-maleficence: мінімізація потенційної шкоди.
+- Autonomy: інформований вибір і контроль користувача.
+- Justice: справедливий доступ і відсутність системної дискримінації.
+- Accountability: зрозуміла відповідальність за рішення.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Sensitive Use Constraints
+- Заборона діагностичних висновків у user-facing поверхнях.
+- Обов'язкове повідомлення про обмеження алгоритму.
+- Людський перегляд для high-risk або low-confidence рішень.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Ethics Governance Model
+- Ethics review board for major policy/model changes.
+- Pre-release ethics checklist.
+- Incident review cadence with action tracking.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Participant and User Safeguards
+- Прозоре інформування про обробку даних.
+- Механізми opt-out де це допустимо.
+- Канали підтримки при дистрес-сигналах.
+
+## Fairness and Inclusion
+- Audit by demographic and organizational segments (де юридично допустимо).
+- Monitoring disparate impact indicators.
+- Mitigation plan for detected imbalance.
+
+## Explainability Ethics
+- Пояснення не повинні маніпулювати користувачем.
+- Формулювання мають уникати стигматизації.
+- Невизначеність має бути явно показана.
+
+## Responsible Research Publication
+- No re-identification risk in published outputs.
+- Aggregated and privacy-preserving reporting.
+- Disclosure of methodological limitations.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Етичні ризики каталогізовані і мають власників.
+- Для high-impact workflows є ethics sign-off.
+- Є журнал етичних інцидентів та коригувальних дій.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 20-explainability.md, 27-clinical-validation.md, 36-gdpr.md, 13-bias.md

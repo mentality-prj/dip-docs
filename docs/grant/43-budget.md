@@ -1,48 +1,59 @@
 # Budget
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Finance Lead
+- Contributors: Program Manager, Technical Leads
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define budget structure, assumptions, and justification.
+Описати бюджетну структуру R&D програми та обгрунтування витрат під Work Packages.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Budget Principles
+- Cost realism and traceability.
+- Direct linkage: cost item -> WP deliverable.
+- Compliance with grant eligibility rules.
+- Transparent overhead treatment.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Cost Categories
+- Personnel
+- Subcontracting
+- Equipment and infrastructure
+- Cloud/software/services
+- Travel and dissemination
+- Indirect costs
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Allocation Logic
+- WP2/WP3: highest technical development and data governance share.
+- WP4: evaluation and validation intensive share.
+- WP5: pilot deployment and support share.
+- WP1/WP6: management, dissemination, exploitation share.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Personnel Assumptions
+- Defined FTE matrix by role and WP.
+- Role rates documented with policy source.
+- Capacity buffers for risk mitigation tasks.
+
+## Infrastructure Assumptions
+- Compute for model training and evaluation.
+- Storage for datasets, artifacts, and audit logs.
+- Security/compliance tooling.
+
+## Contingency Policy
+- Controlled contingency reserve for technical risk.
+- Governance for reallocation approvals.
+- No use for non-eligible activities.
+
+## Budget Risks
+- Underestimation of compliance workload.
+- Pilot expansion beyond planned scope.
+- Vendor cost volatility.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Кожна бюджетна стаття має WP mapping.
+- Є обгрунтування для всіх major cost drivers.
+- Бюджет проходить internal compliance review.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 42-work-packages.md, 44-risk-management.md, 40-commercialisation.md
