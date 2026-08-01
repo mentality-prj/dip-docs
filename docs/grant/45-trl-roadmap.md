@@ -1,48 +1,45 @@
 # TRL Roadmap
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Program Manager
+- Contributors: Technical Leads, Product Leads, Research Lead
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define TRL baseline, target TRLs, and transition plan.
+Визначити шлях розвитку технології від поточного стану до цільових TRL рівнів для DIP і Dzvin.co.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Baseline TRL (Draft)
+- DIP core capabilities: TRL 4-5 (validated components in relevant environment).
+- Dzvin.co integrated wellbeing workflows: TRL 6 (pilot/operational context elements).
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Target TRL by Project End
+- DIP decision governance stack: TRL 6-7.
+- Explainability and policy evaluation framework: TRL 6-7.
+- Cross-domain reusability evidence: TRL 5-6.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## TRL Advancement Levers
+- Controlled pilots.
+- Reproducible validation evidence.
+- Robust security/compliance operations.
+- Integration maturity across surfaces.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Milestone Mapping
+- M1: architecture and protocol freeze -> TRL stability foundation.
+- M2: hybrid engine validated -> TRL progression in core stack.
+- M3: online governance proven -> TRL progression in operational readiness.
+- M4: pilot evidence package -> TRL progression in application readiness.
+
+## Risks to TRL Progression
+- Insufficient validation sample sizes.
+- Integration instability.
+- Compliance bottlenecks.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- TRL claims backed by documented evidence.
+- Each TRL jump linked to concrete deliverables/tests.
+- Independent review readiness for TRL status.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 25-evaluation.md, 30-reproducibility.md, 42-work-packages.md

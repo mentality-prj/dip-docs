@@ -1,48 +1,54 @@
 # Risk Management
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Risk Manager
+- Contributors: All Work Package Leads
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define risk register, triggers, and mitigations.
+Сформувати єдиний risk management framework для наукових, технічних, регуляторних, операційних і комерційних ризиків.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Risk Categories
+- Scientific risk
+- Data/quality risk
+- Technical/architecture risk
+- Security/privacy risk
+- Compliance/ethics risk
+- Adoption/commercial risk
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Risk Register Model
+Для кожного ризику:
+- risk_id
+- description
+- probability
+- impact
+- trigger indicators
+- mitigation actions
+- owner
+- review cadence
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Governance Process
+- Monthly risk review board.
+- Escalation for high-severity risks.
+- Mitigation progress tracking.
+- Residual risk acceptance workflow.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Quantification Approach
+- Probability-impact matrix.
+- Scenario-based stress tests.
+- Thresholds for automatic escalation.
+
+## Integration with Delivery
+- Risks mapped to WP milestones.
+- Budget reserves tied to risk scenarios.
+- Decision gates include risk status checks.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- High/critical risks have tested mitigations.
+- Risk register is continuously updated.
+- Risk status included in periodic grant reporting.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 42-work-packages.md, 43-budget.md, 35-security.md, 37-ethics.md

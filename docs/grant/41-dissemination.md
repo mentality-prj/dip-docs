@@ -1,48 +1,51 @@
 # Dissemination
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Dissemination Lead
+- Contributors: Scientific Coordinator, Marketing, Partnerships
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define scientific and stakeholder dissemination plan.
+Описати план поширення результатів проєкту для наукових, професійних та ринкових аудиторій.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Target Audiences
+- Scientific community
+- Industry practitioners
+- Enterprise decision-makers
+- Public innovation stakeholders
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Dissemination Channels
+- Peer-reviewed publications.
+- Conference talks/workshops.
+- Technical whitepapers and briefs.
+- Webinars and partner events.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Content Streams
+- Methodology and evaluation insights.
+- Explainability and governance practices.
+- Product and deployment lessons.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Open Science and Privacy Balance
+- Publish aggregated, non-identifiable evidence.
+- Preserve confidentiality and contractual constraints.
+- Provide reproducibility artifacts where appropriate.
+
+## Timeline
+- Early: framing and protocol publications.
+- Mid: interim findings and technical notes.
+- Late: validated outcomes and implementation guidance.
+
+## KPIs
+- Number/quality of publications.
+- Audience reach and engagement.
+- Citation and collaboration signals.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Dissemination assets mapped to milestones.
+- Compliance and privacy checks integrated.
+- Measurable outreach KPIs defined.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 38-impact.md, 39-exploitation.md, 30-reproducibility.md

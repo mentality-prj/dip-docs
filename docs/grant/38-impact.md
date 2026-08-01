@@ -1,48 +1,56 @@
 # Impact
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Impact Lead
+- Contributors: Product, Research, Partnerships, Policy
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define societal, scientific, and economic impact pathways.
+Визначити цільовий impact проєкту на науковому, суспільному та економічному рівнях.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Impact Pathways
+- Scientific: validated methods for explainable hybrid decision intelligence.
+- Societal: better early detection and response in wellbeing contexts.
+- Economic: improved organizational decision quality and productivity outcomes.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Beneficiary Groups
+- Employees and individual users.
+- HR/managers and organizational leaders.
+- Researchers and innovation ecosystems.
+- Future integrators of DIP.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Outcome Horizon
+- Short-term: improved decision transparency and adoption.
+- Mid-term: measurable reduction in unmanaged high-risk periods.
+- Long-term: reusable platform impact across multiple domains.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Impact KPIs (Draft)
+- Trust and adoption uplift.
+- High-risk signal response timeliness.
+- Decision quality improvement vs baseline.
+- Number of reusable platform integrations.
+
+## Measurement Strategy
+- Baseline vs post-intervention comparisons.
+- Segment-level impact monitoring.
+- Mixed-method evidence (quant + qualitative).
+
+## Risks to Impact
+- Slow enterprise adoption.
+- Data quality variability.
+- Misinterpretation of signals without training.
+
+## Mitigation
+- Governance-first onboarding playbooks.
+- Role-specific explainability and training assets.
+- Progressive rollout with guardrails.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Impact chain clearly maps outputs -> outcomes -> long-term effects.
+- KPIs are measurable and linked to data sources.
+- Impact claims remain evidence-bound and non-inflated.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 39-exploitation.md, 40-commercialisation.md, 41-dissemination.md
