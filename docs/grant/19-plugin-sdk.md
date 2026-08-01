@@ -1,48 +1,56 @@
 # Plugin SDK
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Platform Architect
+- Contributors: Core Backend Team, Developer Experience Lead
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define extension model and compatibility constraints.
+Визначити SDK-підхід для розширення DIP без модифікації core, із безпечним життєвим циклом плагінів.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Plugin Categories
+- Rule plugins
+- Feature extractor plugins
+- Model inference plugins
+- Explainability provider plugins
+- Connector/source plugins
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## SDK Contract Principles
+- Stable interfaces with versioning.
+- Explicit capability declarations.
+- Resource and permission boundaries.
+- Deterministic error contracts.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Plugin Manifest (Draft)
+- plugin_id
+- version
+- capabilities
+- required_permissions
+- compatible_sdk_versions
+- healthcheck endpoint/hook
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Runtime Controls
+- Sandboxed execution where possible.
+- Timeout and resource limits.
+- Fallback behavior on plugin failure.
+- Observability hooks for plugin metrics.
+
+## Security Review
+- Static and dependency scanning.
+- Permission review.
+- Secrets handling constraints.
+
+## Certification Path
+- Dev/test certification
+- Staging validation
+- Production approval
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Core не потребує змін для стандартних plugin extensions.
+- Кожен plugin має manifest, tests, and observability hooks.
+- Є documented deprecation path для SDK changes.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 15-dip-architecture.md, 16-decision-engine.md, 35-security.md

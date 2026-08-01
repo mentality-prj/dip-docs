@@ -1,48 +1,45 @@
 # Uncertainty Estimation
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: ML Lead
+- Contributors: Decision Science, Responsible AI Lead
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define uncertainty quantification and use in decisions.
+Визначити, як оцінювати та використовувати невизначеність у рішенні, щоб зменшити ризик хибних дій.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Uncertainty Types
+- Data uncertainty: sparse/noisy/missing inputs.
+- Model uncertainty: unstable prediction under perturbations.
+- Policy uncertainty: conflicting decision signals.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Estimation Signals
+- Confidence score from input completeness.
+- Stability under bootstrap/perturbation checks.
+- Disagreement indicators between rule and ML outputs.
+- Cohort coverage adequacy markers.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Decision Policy Integration
+- High risk + high uncertainty -> human review path.
+- Low uncertainty + consistent signals -> standard action path.
+- Persistent uncertainty -> additional data request/observation period.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Communication Layer
+- Role-adapted uncertainty explanation.
+- Clear distinction: "low confidence" != "no risk".
+- Avoid deterministic language under uncertainty.
+
+## Monitoring
+- Distribution of confidence levels over time.
+- Correlation between uncertainty and downstream errors.
+- Uncertainty drift alerts.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Кожен decision output містить uncertainty marker.
+- Є policy rules для uncertainty-triggered safeguards.
+- Uncertainty quality входить у регулярний evaluation цикл.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 20-explainability.md, 21-adaptive-baseline.md, 25-evaluation.md

@@ -1,48 +1,53 @@
 # Data Quality
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Data Quality Lead
+- Contributors: Data Platform, ML Team, Research Ops
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define completeness, consistency, drift and QC processes.
+Визначити framework контролю якості даних для стабільних рішень і коректної наукової валідації.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Quality Dimensions
+- Completeness
+- Consistency
+- Accuracy (where verifiable)
+- Timeliness
+- Uniqueness
+- Validity
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Quality Rules
+- Schema conformance checks.
+- Mandatory field thresholds by dataset type.
+- Range and logical constraints.
+- Duplicate and anomaly detection.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Quality Scoring
+- Dataset-level quality score.
+- Feature-level quality flags.
+- Decision-time quality indicators.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Missing Data Strategy
+- Structured null taxonomy.
+- Imputation only where methodologically justified.
+- Missingness-aware model features.
+
+## Drift and Freshness
+- Freshness SLAs by data source.
+- Drift alerts for critical distributions.
+- Source outage and lag monitoring.
+
+## Quality Incident Workflow
+- Detection -> triage -> owner assignment -> remediation.
+- Incident severity levels and deadlines.
+- Post-incident root cause report.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Критичні pipelines мають automated quality gates.
+- Quality status доступний для evaluation reports.
+- Є historical quality dashboard для trend analysis.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 08-dataset-specification.md, 09-feature-engineering.md, 25-evaluation.md

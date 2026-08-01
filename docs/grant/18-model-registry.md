@@ -1,48 +1,60 @@
 # Model Registry
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: MLOps Lead
+- Contributors: ML Team, Platform Team, QA
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define model artifact lifecycle, approvals, and rollback.
+Описати Model Registry як контрольну площину життєвого циклу моделей, сумісну з DIP decision contract.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Registry Entity
+Кожен запис моделі містить:
+- model_id
+- version
+- model_type
+- training_dataset_snapshot
+- feature_set_version
+- evaluation_report_ref
+- approval_status
+- deployment_targets
+- rollback_reference
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Lifecycle States
+- Draft
+- Validated
+- Approved
+- Deployed
+- Deprecated
+- Archived
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Approval Workflow
+- Technical validation gate.
+- Responsible AI and bias gate.
+- Security/compliance gate.
+- Final release approval.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Deployment Governance
+- Canary/limited rollout options.
+- Policy-bound activation.
+- Automatic rollback triggers.
+
+## Compatibility Controls
+- Model <-> feature version matrix.
+- Model <-> policy configuration matrix.
+- Backward compatibility status.
+
+## Audit Requirements
+- Immutable change history.
+- Who/when/why for each state change.
+- Linked evidence artifacts.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Жодна модель не деплоїться без approved registry record.
+- Є простежуваність від моделі до evaluation/bias reports.
+- Rollback сценарій задокументований для кожної deployed model.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 17-feature-store.md, 23-model-lifecycle.md, 24-experiment-tracking.md

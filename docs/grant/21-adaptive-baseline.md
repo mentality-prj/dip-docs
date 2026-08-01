@@ -1,48 +1,54 @@
 # Adaptive Baseline
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Decision Science Lead
+- Contributors: ML Team, Analytics Team
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define personalization baseline adaptation strategy.
+Описати механізм adaptive baseline для персоналізованих і командних risk оцінок.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Motivation
+Static thresholds погано працюють у різних популяціях і часових фазах.
+Adaptive baseline дозволяє оцінювати відхилення від індивідуальної/командної норми.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Baseline Levels
+- Individual baseline
+- Team baseline
+- Company baseline
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Baseline Components
+- Recent central tendency
+- Volatility profile
+- Trend factor
+- Engagement-adjusted confidence
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Update Policy
+- Rolling windows with minimal sample requirements.
+- Smoothing for noisy trajectories.
+- Freeze logic during data outages or instability.
+
+## Use in Decision Engine
+- Baseline feeds anomaly and deviation terms.
+- Baseline quality impacts confidence and policy routing.
+- Severe baseline shifts trigger diagnostics flags.
+
+## Guardrails
+- Minimum evidence threshold.
+- Drift-aware recalibration triggers.
+- Conservative fallback when baseline confidence is low.
+
+## Evaluation Criteria
+- Better calibration in heterogeneous cohorts.
+- Reduced false alerts vs static baseline.
+- Stability under missingness and engagement variance.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Baseline logic versioned and reproducible.
+- Quality/confidence of baseline exposed to policy layer.
+- Documented fallback path when baseline unreliable.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 16-decision-engine.md, 22-uncertainty.md, 26-metrics.md
