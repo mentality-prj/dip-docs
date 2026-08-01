@@ -54,3 +54,10 @@ This directory contains a reusable R&D documentation pack for grant applications
 - Keep one owner per file.
 - Track version/date at the top of each document.
 - Link evidence (experiments, notebooks, code, legal docs) in each section.
+
+## Bridge to Submission
+- Research layer (traceability + hypotheses + TRL evidence): `docs/research/*`
+- Proposal layer (submission-ready structure): `docs/proposal/*`
+- System requirements baseline: `docs/specification/system-requirements.md`
+- Architecture decisions: `docs/adr/*`
+- Live execution governance: `docs/operations/risk-register.md`, `docs/operations/deliverables-register.md`

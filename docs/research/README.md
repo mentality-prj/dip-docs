@@ -17,3 +17,9 @@
 7. 07-ip-strategy.md
 8. 08-consortium-handbook.md
 9. 09-data-management-plan-dmp.md
+
+## Operational Linkage
+- Вимоги системи (SRS): `docs/specification/system-requirements.md`
+- Архітектурні рішення (ADR): `docs/adr/*`
+- Живий реєстр ризиків: `docs/operations/risk-register.md`
+- Реєстр deliverables: `docs/operations/deliverables-register.md`
