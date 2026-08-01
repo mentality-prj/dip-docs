@@ -1,48 +1,55 @@
 # Model Lifecycle
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: MLOps Lead
+- Contributors: ML Team, Platform Team, QA
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define train/deploy/monitor/retrain lifecycle.
+Описати повний lifecycle моделей від ідеї до deprecation у межах DIP + Dzvin.co.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Lifecycle Stages
+1. Problem framing
+2. Data and feature freeze
+3. Training and offline validation
+4. Registry approval
+5. Controlled deployment
+6. Monitoring and online evaluation
+7. Retraining or rollback
+8. Deprecation and archive
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Entry and Exit Criteria
+- Кожен етап має чіткі gates і required artifacts.
+- Перехід між етапами можливий лише за наявності evidences.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Monitoring in Production
+- Predictive quality metrics.
+- Calibration and drift metrics.
+- Confidence distribution.
+- Policy conflict rates.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Retraining Triggers
+- Sustained metric degradation.
+- Data distribution shift.
+- Label/ground-truth evolution.
+
+## Rollback Triggers
+- Critical safety alerts.
+- Severe calibration drift.
+- Elevated false-high-risk rate.
+
+## Documentation Requirements
+- Model card per version.
+- Evaluation report per release.
+- Bias and safety checklists.
+- Deployment and rollback logs.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Для кожної deployed model існує end-to-end lifecycle trace.
+- Retraining/rollback сценарії протестовані.
+- Lifecycle інтегрований з policy governance.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 18-model-registry.md, 24-experiment-tracking.md, 25-evaluation.md

@@ -1,48 +1,51 @@
 # User Validation
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Product Research Lead
+- Contributors: UX Team, Data Science, Ethics Lead
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define usability, trust, and outcome validation.
+Перевірити, як користувачі та менеджери розуміють, довіряють і використовують decision outputs у реальних сценаріях.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Validation Goals
+- Перевірити зрозумілість сигналів і рекомендацій.
+- Виміряти довіру до пояснюваних рішень.
+- Виявити бар'єри adoption у B2C/B2B потоках.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Audience Segments
+- End users
+- Team managers
+- HR/admin stakeholders
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Methods
+- Moderated usability sessions.
+- Task-based comprehension tests.
+- Longitudinal adoption analytics.
+- Structured interviews.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Core Questions
+- Чи правильно інтерпретується рівень ризику?
+- Чи рекомендації вважаються релевантними?
+- Чи пояснення допомагають діяти?
+
+## Outcome Measures
+- Task completion with correct interpretation.
+- Trust and perceived usefulness scores.
+- Action uptake and follow-through rates.
+- Reported confusion or harm signals.
+
+## Safety and Ethics in Testing
+- Sensitive content handling protocol.
+- Debrief and support channels.
+- Consent and withdrawal mechanisms.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Досягнуті predefined usability/trust thresholds.
+- Виявлені UX ризики мають remediation backlog.
+- Результати інтегровані в policy and explanation updates.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 20-explainability.md, 29-explainability-validation.md, 37-ethics.md

@@ -1,48 +1,55 @@
 # Experiment Tracking
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Research Platform Lead
+- Contributors: ML Team, Data Team, QA
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define experiment metadata, reproducibility, and auditability.
+Визначити систему трекінгу експериментів для відтворюваності, аудиту і порівняння результатів.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Minimum Run Metadata
+- run_id
+- hypothesis_id
+- dataset_snapshot_id
+- feature_set_version
+- model/rule/policy versions
+- random_seed
+- metrics_summary
+- artifact_uris
+- author and timestamp
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Artifact Policy
+- Immutable artifacts for published runs.
+- Versioned storage for configs and outputs.
+- Checksums for critical files.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Experiment Taxonomy
+- Exploratory runs
+- Confirmatory runs
+- Ablation runs
+- Replication runs
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Promotion Rules
+- Тільки confirmatory/replication runs можуть бути evidence для grant claims.
+- Exploratory результати позначаються окремо.
+
+## Reproducibility Checks
+- One-click rerun from manifest.
+- Cross-environment consistency check.
+- Metric deviation tolerances.
+
+## Auditability
+- Change history for experiment definitions.
+- Evidence linkage to evaluation reports.
+- Access logs for sensitive artifacts.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- 100% ключових висновків мають посилання на run artifacts.
+- Replication runs доступні для reviewer-level audit.
+- Tracking schema узгоджена з model registry.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 23-model-lifecycle.md, 25-evaluation.md, 30-reproducibility.md

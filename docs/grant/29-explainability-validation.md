@@ -1,48 +1,49 @@
 # Explainability Validation
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Explainability Research Lead
+- Contributors: UX Research, Data Science, Ethics Team
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Validate explanation quality and effect on trust.
+Оцінити якість explainability outputs за критеріями faithfulness, clarity, actionability і safety.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Validation Framework
+- Technical faithfulness tests.
+- User comprehension tests.
+- Decision-support utility tests.
+- Safety language audits.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Faithfulness Tests
+- Перевірка відповідності explanation до фактичного decision trace.
+- Consistency checks across similar cases.
+- Counterfactual sanity checks.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Clarity and Utility Tests
+- Time-to-understand metric.
+- Correct interpretation rate.
+- Recommendation-action linkage score.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Safety Checks
+- No diagnostic overclaim language.
+- Uncertainty disclosures where needed.
+- Harmful framing detection.
+
+## Comparative Design
+- With explanation vs without explanation.
+- Full detail vs concise role-adapted explanation.
+
+## Success Criteria
+- Пояснення підвищують правильність інтерпретації.
+- Пояснення не знижують safety outcomes.
+- Пояснення покращують adoption у цільових ролях.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Explainability quality gates визначені і автоматизовані де можливо.
+- Reviewer-ready report готується для кожного major release.
+- Виявлені failure modes мають mitigation plan.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 20-explainability.md, 28-user-validation.md, 25-evaluation.md

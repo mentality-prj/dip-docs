@@ -1,48 +1,59 @@
 # Metrics
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Metrics Lead
+- Contributors: Data Science, Product Analytics, Research Lead
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define primary/secondary metrics and alert thresholds.
+Визначити метрики успіху для predictive quality, decision quality, adoption, safety and impact.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Metric Layers
+- Predictive metrics
+- Decision metrics
+- User/adoption metrics
+- Safety/governance metrics
+- Business/impact metrics
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Predictive Metrics
+- AUROC
+- AUPRC
+- Calibration error
+- Brier score
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Decision Metrics
+- Precision@high-risk alerts
+- False alert rate
+- Disagreement resolution quality
+- Time-to-action after signal
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Explainability and Trust Metrics
+- Comprehension score
+- Trust score uplift
+- Explanation usefulness rating
+
+## Governance Metrics
+- Drift alert frequency
+- Mitigation activation rate
+- Rollback count
+- Policy stability index
+
+## Operational Metrics
+- Inference latency
+- Pipeline freshness SLA adherence
+- Data quality pass rate
+
+## Metric Governance
+- Primary vs secondary metrics registry.
+- Threshold ownership.
+- Change control for metric definitions.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Для кожного RQ визначено primary metrics.
+- Всі metrics мають formulas і thresholds.
+- Є dashboard mapping metrics -> decision gates.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 25-evaluation.md, 12-statistics.md, 38-impact.md
