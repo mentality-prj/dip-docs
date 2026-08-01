@@ -1,48 +1,65 @@
 # Statistical Analysis
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Biostatistics Lead
+- Contributors: Data Scientists, Research Analysts
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define tests, power assumptions, and uncertainty treatment.
+Описати статистичний план для перевірки гіпотез, оцінки невизначеності та контролю помилок висновків.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Analysis Principles
+- Effect sizes first, p-values second.
+- Confidence intervals for all primary effects.
+- Predefined hypothesis families.
+- Transparent handling of missing data.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Primary Test Toolbox
+- Mann-Whitney U for non-normal two-group comparisons.
+- ANOVA / Welch ANOVA for multi-group comparisons.
+- Chi-square tests for categorical distributions.
+- Bootstrap intervals for unstable distributions.
+- ROC/AUPRC analysis for ranking quality.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Calibration and Reliability
+- Brier score
+- Expected calibration error
+- Reliability curves by cohort
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Multiple Testing Control
+- FDR control for exploratory blocks.
+- Family-wise error control for confirmatory primary endpoints.
+
+## Missing Data Policy
+- Missingness diagnostics (MCAR/MAR plausibility checks).
+- Multiple imputation where valid.
+- Sensitivity analysis with complete-case comparison.
+
+## Drift and Temporal Analysis
+- Rolling-window metric deltas.
+- Change-point monitoring.
+- Confidence bounds for drift indicators.
+
+## Practical Significance Thresholds
+- Define minimal important difference per metric.
+- Report both statistical and operational significance.
+
+## Sample Size Logic
+- Power targets for primary comparisons.
+- Minimal conclusive sample per segment.
+- Early stopping and futility criteria for online tests.
+
+## Reproducible Analysis Stack
+- Versioned scripts and manifests.
+- Fixed random seeds for bootstrap and splits.
+- Immutable run metadata references.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Для кожної RQ визначено статистичний тест і припущення.
+- Є план корекції на множинні порівняння.
+- Всі primary results мають CI + effect size.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 05-research-questions.md, 06-methodology.md, 25-evaluation.md, 30-reproducibility.md

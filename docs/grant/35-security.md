@@ -1,48 +1,67 @@
 # Security
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Security Lead
+- Contributors: Platform Engineering, DevOps, Privacy Officer
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define threat model, controls, and incident response.
+Описати security framework для DIP + Dzvin.co з фокусом на захист чутливих даних і цілісність decision pipelines.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Security Objectives
+- Confidentiality of sensitive user and organizational data.
+- Integrity of decision workflows and policy states.
+- Availability of core decision services.
+- Traceability for incident response and audit.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Threat Model Scope
+- API misuse and credential leakage.
+- Unauthorized cross-tenant data access.
+- Data tampering in feature/decision artifacts.
+- Supply chain and dependency risks.
+- Insider misuse of diagnostics surfaces.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Core Controls
+- Strong authentication and scoped authorization.
+- Tenant isolation at data and service layers.
+- Encryption in transit and at rest.
+- Immutable audit trails for sensitive operations.
+- Secrets management and rotation policy.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Application Security
+- Input validation on all public decision endpoints.
+- Rate limiting and abuse detection.
+- Secure defaults for fallback paths.
+- Least-privilege service permissions.
+
+## Data Security
+- Data classification and handling policy.
+- Restricted access to individual-level records.
+- Masking/anonymization for analytical views.
+- Controlled export procedures.
+
+## Operational Security
+- Vulnerability scanning and patch SLAs.
+- Dependency monitoring.
+- Logging and anomaly alerting.
+- Incident response runbooks.
+
+## AI/Decision-Specific Security
+- Protection against feature poisoning where feasible.
+- Policy override governance and audit.
+- Safeguards against prompt/data leakage in AI-assisted summaries.
+
+## Incident Response
+- Severity tiers and response times.
+- Forensic logging requirements.
+- Communication protocol for impacted stakeholders.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Security controls mapped to identified threats.
+- Critical endpoints covered by authN/authZ + audit.
+- Incident response drills and evidence documented.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 34-api.md, 36-gdpr.md, 37-ethics.md, 44-risk-management.md

@@ -1,48 +1,55 @@
 # Clinical Validation
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Clinical Research Coordinator
+- Contributors: Ethics Lead, Product Research, External Advisors
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define clinical validation design and safeguards.
+Визначити рамку клінічно орієнтованої валідації для decision support сценаріїв без позиціонування системи як медичного діагностичного виробу на цьому етапі.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Validation Objective
+Перевірити, що risk/recommendation outputs:
+- узгоджуються з очікуваними психометричними патернами;
+- не створюють небезпечних або хибно-категоричних інтерпретацій;
+- підтримують своєчасну ескалацію за високого ризику.
 
 ## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+- In scope: clinical plausibility and safety alignment.
+- Out of scope: formal diagnostic claims.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Validation Components
+- Concordance with standardized questionnaires (where available).
+- Review of explanation language safety.
+- Escalation policy review for high-risk signals.
+- Monitoring adverse interpretation incidents.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Human Oversight
+- Clinical advisory panel for protocol review.
+- Defined referral/escalation guidance.
+- Periodic review of high-risk false positives/negatives.
+
+## Safety Triggers
+- Low confidence + high risk combination.
+- Contradictory signals over short windows.
+- Repeated worsening without response uptake.
+
+## Outputs
+- Clinical plausibility report.
+- Safety incident log.
+- Recommendations for policy threshold adjustment.
+
+## Limitations
+- Self-report dependency.
+- Non-clinical context for many users.
+- Heterogeneous baseline mental states.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Всі клінічно чутливі сценарії мають human oversight policy.
+- В explanation-комунікації немає діагностичних тверджень.
+- Є documented escalation pathway.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 20-explainability.md, 22-uncertainty.md, 36-gdpr.md, 37-ethics.md
