@@ -1,48 +1,54 @@
 # Bias Analysis
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Responsible AI Lead
+- Contributors: Data Science, Ethics Lead, Product Analytics
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Assess representation, fairness risks, and mitigation actions.
+Визначити підхід до виявлення, оцінки і зменшення bias у decision pipelines.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Bias Risk Categories
+- Sampling bias
+- Participation bias
+- Measurement bias (self-report artifacts)
+- Label bias
+- Policy bias from threshold settings
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Analysis Dimensions
+- Across teams/company sizes.
+- Across engagement levels.
+- Across data completeness tiers.
+- Across temporal periods.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Core Fairness Checks
+- Error rate comparison by segment.
+- Calibration parity checks.
+- Alert burden distribution.
+- Disagreement distribution (rules vs ML).
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Mitigation Toolkit
+- Reweighting and resampling.
+- Segment-aware threshold calibration.
+- Feature revision/removal for problematic proxies.
+- Policy guardrails for vulnerable segments.
+
+## Monitoring Cadence
+- Pre-release bias audit.
+- Rolling production bias dashboards.
+- Trigger-based deep-dive review.
+
+## Governance
+- Bias findings logged with severity and owner.
+- Mandatory mitigation plan for medium/high risk findings.
+- Ethics board escalation for unresolved critical bias.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Bias analysis інтегровано у release gates.
+- Є evidence that mitigations reduce detected disparities.
+- Bias status включено в регулярний evaluation report.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 12-statistics.md, 14-data-quality.md, 37-ethics.md, 44-risk-management.md

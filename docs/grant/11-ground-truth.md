@@ -1,48 +1,49 @@
 # Ground Truth
 
 ## Document Metadata
-- Owner:
-- Contributors:
-- Version:
-- Last Updated:
+- Owner: Research Quality Lead
+- Contributors: Clinical Advisor, Data Science, Product Research
+- Version: 0.2
+- Last Updated: 2026-08-01
 - Status: Draft
 
 ## Purpose
-Define annotation and truth construction process.
+Описати процес формування ground truth для оцінювання моделей і decision policies.
 
-## Key Questions
-- What exact decision should this document enable?
-- Which assumptions must be validated?
-- Which claims require evidence?
+## Ground Truth Sources
+- Longitudinal self-report trajectories.
+- Psychometric checkpoints.
+- Behavioral and engagement outcomes.
+- Structured feedback signals on predicted events.
 
-## Scope
-- In scope:
-- Out of scope:
-- Dependencies:
+## Ground Truth Strategy
+- Multi-source triangulation замість single-source truth.
+- Time-aligned outcome windows.
+- Confidence tagging for each truth instance.
 
-## Required Evidence
-- Data/evidence sources:
-- Experiments/analyses required:
-- External references:
+## Annotation and Review
+- Rule-based auto-labeling baseline.
+- Human review for edge/high-impact cases.
+- Disagreement adjudication workflow.
 
-## Structure Draft
-1. Context
-2. Approach
-3. Evidence
-4. Risks and limits
-5. Decisions and next actions
+## Confidence Tiers
+- High confidence: multiple converging sources.
+- Medium confidence: limited but consistent evidence.
+- Low confidence: sparse/conflicting signals.
+
+## Noise and Uncertainty Handling
+- Explicit inconclusive class.
+- Weighted evaluation by confidence tier.
+- Sensitivity analysis excluding low-confidence truths.
+
+## Drift Control
+- Periodic re-evaluation of truth construction rules.
+- Monitoring shift in source reliability.
 
 ## Acceptance Criteria
-- Criteria 1:
-- Criteria 2:
-- Criteria 3:
-
-## Open Issues
-- Issue:
-- Owner:
-- Target date:
+- Ground truth protocol задокументований і відтворюваний.
+- Є audit trail для manual adjudication.
+- Усі evaluation reports містять confidence-stratified results.
 
 ## Links
-- Related docs:
-- Related code/modules:
-- Related tickets:
+- Related docs: 10-label-definition.md, 12-statistics.md, 25-evaluation.md, 30-reproducibility.md
