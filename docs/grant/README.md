@@ -1,14 +1,17 @@
 # Dzvin.co + DIP Research Documentation Pack
 
 ## Purpose
+
 This directory contains a reusable R&D documentation pack for grant applications (Horizon Europe, EIC Pathfinder, Eurostars) and for internal engineering/scientific alignment.
 
 ## How to use this pack
+
 1. Fill documents in the recommended writing order.
 2. Keep claims evidence-based (metrics, references, protocols, risks).
 3. Reuse this base for each specific call by adapting wording, KPIs, and work packages.
 
 ## Recommended writing order
+
 1. 01-vision.md
 2. 02-problem-statement.md
 3. 04-scientific-novelty.md
@@ -31,12 +34,14 @@ This directory contains a reusable R&D documentation pack for grant applications
 20. 40-commercialisation.md
 
 ## Mapping to EIC Pathfinder evaluation logic
+
 - Excellence: 03-state-of-the-art.md, 04-scientific-novelty.md, 05-research-questions.md, 06-methodology.md, 07-experimental-design.md
 - Impact: 38-impact.md, 39-exploitation.md, 40-commercialisation.md, 41-dissemination.md
 - Quality and efficiency of implementation: 42-work-packages.md, 43-budget.md, 44-risk-management.md, 45-trl-roadmap.md
 - Responsible AI / ethics / data governance: 13-bias.md, 14-data-quality.md, 36-gdpr.md, 37-ethics.md
 
 ## Official sources to align with
+
 - EIC Work Programme 2026
 - Funding and Tenders Portal
 - EIC Pathfinder FAQ
@@ -44,6 +49,7 @@ This directory contains a reusable R&D documentation pack for grant applications
 - Advice for Applicants
 
 ## Suggested appendices
+
 - appendices/A01-literature-matrix.md
 - appendices/A02-dataset-dictionary.md
 - appendices/A03-metrics-calculation-sheet.md
@@ -51,13 +57,16 @@ This directory contains a reusable R&D documentation pack for grant applications
 - appendices/A05-consent-and-ethics-templates.md
 
 ## Governance
+
 - Keep one owner per file.
 - Track version/date at the top of each document.
 - Link evidence (experiments, notebooks, code, legal docs) in each section.
 
 ## Bridge to Submission
+
 - Research layer (traceability + hypotheses + TRL evidence): `docs/research/*`
 - Proposal layer (submission-ready structure): `docs/proposal/*`
 - System requirements baseline: `docs/specification/system-requirements.md`
 - Architecture decisions: `docs/adr/*`
 - Live execution governance: `docs/operations/risk-register.md`, `docs/operations/deliverables-register.md`
+- Verification evidence: `docs/verification/*`
