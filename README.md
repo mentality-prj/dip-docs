@@ -17,6 +17,7 @@
 Research -> Requirements -> Architecture -> Implementation -> Verification -> Evidence -> Proposal
 
 Це дозволяє:
+
 - зберігати простежуваність від наукових тверджень до доказів;
 - контролювати зміни через ADR і change log;
 - збирати заявку з готових модулів, а не писати з нуля.
@@ -38,6 +39,7 @@ Research -> Requirements -> Architecture -> Implementation -> Verification -> Ev
 ### 1) Grant Base
 
 Базовий корпус R&D і грантової документації:
+
 - [Огляд і правила](docs/grant/README.md)
 - [Додатки](docs/grant/appendices/A01-literature-matrix.md)
 - [Data Dictionary](docs/grant/appendices/A02-dataset-dictionary.md)
@@ -46,6 +48,7 @@ Research -> Requirements -> Architecture -> Implementation -> Verification -> Ev
 ### 2) Research Layer
 
 Зв'язок між гіпотезами, експериментами і доказами:
+
 - [Traceability Matrix](docs/research/01-traceability-matrix.md)
 - [Scientific Hypotheses](docs/research/02-scientific-hypotheses.md)
 - [WP Success Criteria](docs/research/03-wp-success-criteria.md)
@@ -60,11 +63,13 @@ Research -> Requirements -> Architecture -> Implementation -> Verification -> Ev
 ### 3) Specification Layer
 
 Функціональні та нефункціональні вимоги:
+
 - [System Requirements Specification](docs/specification/system-requirements.md)
 
 ### 4) Architecture Governance
 
 Ключові технічні рішення:
+
 - [ADR Index](docs/adr/README.md)
 - [ADR-0001 Python](docs/adr/0001-python.md)
 - [ADR-0002 MongoDB](docs/adr/0002-mongodb.md)
@@ -79,6 +84,7 @@ Research -> Requirements -> Architecture -> Implementation -> Verification -> Ev
 ### 5) Operations and Control
 
 Контроль виконання і змін:
+
 - [Risk Register](docs/operations/risk-register.md)
 - [Deliverables Register](docs/operations/deliverables-register.md)
 - [Change Log](docs/operations/change-log.md)
@@ -86,12 +92,14 @@ Research -> Requirements -> Architecture -> Implementation -> Verification -> Ev
 ### 6) Verification and Evidence
 
 Верифікація вимог і доказова база:
+
 - [Verification Plan](docs/verification/verification-plan.md)
 - [Verification Matrix](docs/verification/verification-matrix.md)
 
 ### 7) Proposal Layer
 
 Матеріали, які напряму збираються у заявку:
+
 - [Proposal Overview](docs/proposal/README.md)
 - [01 Excellence](docs/proposal/01-excellence.md)
 - [02 Impact](docs/proposal/02-impact.md)

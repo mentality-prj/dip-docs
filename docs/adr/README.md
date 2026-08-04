@@ -1,6 +1,7 @@
 # Architecture Decision Records (ADR)
 
 Формат ADR:
+
 - Context
 - Options
 - Decision
@@ -8,11 +9,13 @@
 - Status
 
 Статуси:
+
 - Proposed
 - Accepted
 - Superseded
 
 ## Catalog
+
 1. 0001-python.md
 2. 0002-mongodb.md
 3. 0003-fastapi.md
