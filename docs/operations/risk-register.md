@@ -1,5 +1,7 @@
 # Risk Register
 
+Мова: Українська (default) | [English](risk-register.en.md)
+
 ## Purpose
 
 Живий реєстр ризиків для щомісячного оновлення (не narrative документ).
@@ -14,6 +16,7 @@
 | R-006   | Model Governance | Drift causes unstable policy decisions.                  | Medium      | High   | Drift monitoring and policy health checks.          | Drift or trust score crosses degraded threshold.          | Trust gating, auto-mitigation, rollback triggers.          | Force rules-only mode until health recovers.                         | ML Lead         | Open   | 2026-09-01  |
 
 ## Horizon Europe References
+
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en

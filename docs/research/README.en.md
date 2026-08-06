@@ -1,17 +1,15 @@
 # Research Layer
 
-Мова: Українська (default) | [English](README.en.md)
+Language: [Українська (default)](README.md) | English
 
-Цей каталог зшиває базову R&D документацію з поданням на конкретний грант.
+This directory bridges the core R&D documentation with concrete grant submissions.
 
-## Призначення
+## Purpose
+- ensure traceability between scientific claims and evidence;
+- define validated hypotheses, KPIs, and TRL evidence;
+- prepare artifacts used directly while drafting `docs/proposal/*`.
 
-- забезпечити traceability між науковими твердженнями і доказами;
-- зафіксувати верифіковані гіпотези, KPI та TRL-докази;
-- підготувати артефакти, які прямо використовуються під час написання `docs/proposal/*`.
-
-## Склад
-
+## Contents
 1. 01-traceability-matrix.md
 2. 02-scientific-hypotheses.md
 3. 03-wp-success-criteria.md
@@ -24,16 +22,14 @@
 10. experiment-registry.md
 
 ## Operational Linkage
-
-- Вимоги системи (SRS): `docs/specification/system-requirements.md`
-- Архітектурні рішення (ADR): `docs/adr/*`
-- Живий реєстр ризиків: `docs/operations/risk-register.md`
-- Реєстр deliverables: `docs/operations/deliverables-register.md`
+- System requirements (SRS): `docs/specification/system-requirements.md`
+- Architecture decisions (ADR): `docs/adr/*`
+- Live risk register: `docs/operations/risk-register.md`
+- Deliverables register: `docs/operations/deliverables-register.md`
 - Verification layer: `docs/verification/*`
 - Change log: `docs/operations/change-log.md`
 
 ## Horizon Europe References
-
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en

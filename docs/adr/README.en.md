@@ -1,17 +1,15 @@
 # Architecture Decision Records (ADR)
 
-Мова: Українська (default) | [English](README.en.md)
+Language: [Українська (default)](README.md) | English
 
-Формат ADR:
-
+Format:
 - Context
 - Options
 - Decision
 - Consequences
 - Status
 
-Статуси:
-
+Statuses:
 - Proposed
 - Accepted
 - Superseded
@@ -29,7 +27,6 @@
 9. [0009-dip-as-independent-product.md](0009-dip-as-independent-product.md)
 
 ## Horizon Europe References
-
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en

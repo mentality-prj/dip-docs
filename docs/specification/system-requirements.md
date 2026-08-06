@@ -1,5 +1,7 @@
 # System Requirements Specification (SRS)
 
+Мова: Українська (default) | [English](system-requirements.en.md)
+
 ## Purpose
 
 Єдиний реєстр вимог для DIP + Dzvin.co. Усі Work Packages, deliverables і acceptance criteria повинні посилатися на ID вимог із цього документа.
@@ -43,6 +45,7 @@
 - Кожен verification record у `docs/verification/verification-matrix.md` повинен посилатися на один або більше FR/NFR.
 
 ## Horizon Europe References
+
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en
