@@ -41,3 +41,10 @@
 - Кожен deliverable у `docs/operations/deliverables-register.md` повинен посилатися мінімум на 1 FR або NFR.
 - Кожен WP acceptance criteria у `docs/research/03-wp-success-criteria.md` має бути мапований на вимоги цього SRS.
 - Кожен verification record у `docs/verification/verification-matrix.md` повинен посилатися на один або більше FR/NFR.
+
+## Horizon Europe References
+- EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
+- Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
+- EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en
+- Evaluation Form (expert criteria): https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/ef/ef_he-eic-pathfinder-open_en.pdf
+- Advice for Applicants: https://rea.ec.europa.eu/guidance/advice-applicants_en
