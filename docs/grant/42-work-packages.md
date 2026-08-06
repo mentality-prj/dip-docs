@@ -1,5 +1,7 @@
 # Work Packages
 
+Мова: Українська (default) | [English](42-work-packages.en.md)
+
 ## Document Metadata
 - Owner: Program Manager
 - Contributors: All Stream Leads

@@ -1,5 +1,7 @@
 # A03 Metrics Calculation Sheet
 
+Мова: Українська (default) | [English](A03-metrics-calculation-sheet.en.md)
+
 ## Purpose
 Single place to define exact metric formulas and thresholds.
 

@@ -1,5 +1,7 @@
 # Budget
 
+Мова: Українська (default) | [English](43-budget.en.md)
+
 ## Document Metadata
 - Owner: Finance Lead
 - Contributors: Program Manager, Technical Leads

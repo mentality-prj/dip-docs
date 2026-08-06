@@ -1,5 +1,7 @@
 # TRL Roadmap
 
+Мова: Українська (default) | [English](45-trl-roadmap.en.md)
+
 ## Document Metadata
 - Owner: Program Manager
 - Contributors: Technical Leads, Product Leads, Research Lead

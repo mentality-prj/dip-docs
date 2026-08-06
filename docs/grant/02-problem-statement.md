@@ -1,5 +1,7 @@
 # Problem Statement
 
+Мова: Українська (default) | [English](02-problem-statement.en.md)
+
 ## Document Metadata
 - Owner: Research Lead
 - Contributors: Product, Data Science, Clinical and Security stakeholders

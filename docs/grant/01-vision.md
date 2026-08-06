@@ -1,5 +1,7 @@
 # Vision
 
+Мова: Українська (default) | [English](01-vision.en.md)
+
 ## Document Metadata
 - Owner: Dzvin R&D Core Team
 - Contributors: DIP Team, Dzvin.co Team, Clinical Advisors (to be assigned)

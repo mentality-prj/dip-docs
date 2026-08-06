@@ -1,5 +1,7 @@
 # Integration
 
+Мова: Українська (default) | [English](33-integration.en.md)
+
 ## Document Metadata
 - Owner: Integration Architect
 - Contributors: DIP Team, Dzvin.co Team, Security Team

@@ -1,5 +1,7 @@
 # Metrics
 
+Мова: Українська (default) | [English](26-metrics.en.md)
+
 ## Document Metadata
 - Owner: Metrics Lead
 - Contributors: Data Science, Product Analytics, Research Lead

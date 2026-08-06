@@ -1,5 +1,7 @@
 # Evaluation Protocol
 
+Мова: Українська (default) | [English](25-evaluation.en.md)
+
 ## Document Metadata
 - Owner: Evaluation Lead
 - Contributors: Data Science, Product Analytics, Scientific Coordinator

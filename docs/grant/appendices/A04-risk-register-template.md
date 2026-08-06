@@ -1,5 +1,7 @@
 # A04 Risk Register Template
 
+Мова: Українська (default) | [English](A04-risk-register-template.en.md)
+
 ## Purpose
 Template for scientific, technical, legal, and adoption risks.
 

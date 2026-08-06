@@ -1,5 +1,7 @@
 # Security
 
+Мова: Українська (default) | [English](35-security.en.md)
+
 ## Document Metadata
 - Owner: Security Lead
 - Contributors: Platform Engineering, DevOps, Privacy Officer

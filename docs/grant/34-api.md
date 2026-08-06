@@ -1,5 +1,7 @@
 # API
 
+Мова: Українська (default) | [English](34-api.en.md)
+
 ## Document Metadata
 - Owner: API Lead
 - Contributors: Platform Team, Application Team, QA

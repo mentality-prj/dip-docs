@@ -1,5 +1,7 @@
 # Commercialisation
 
+Мова: Українська (default) | [English](40-commercialisation.en.md)
+
 ## Document Metadata
 - Owner: Commercial Lead
 - Contributors: Product, Partnerships, Strategy Team

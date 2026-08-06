@@ -1,5 +1,7 @@
 # Decision Engine
 
+Мова: Українська (default) | [English](16-decision-engine.en.md)
+
 ## Document Metadata
 - Owner: Decision Science Lead
 - Contributors: Platform Team, ML Team, Research Team

@@ -1,5 +1,7 @@
 # Experiment Tracking
 
+Мова: Українська (default) | [English](24-experiment-tracking.en.md)
+
 ## Document Metadata
 - Owner: Research Platform Lead
 - Contributors: ML Team, Data Team, QA

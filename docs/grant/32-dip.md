@@ -1,5 +1,7 @@
 # DIP Product
 
+Мова: Українська (default) | [English](32-dip.en.md)
+
 ## Document Metadata
 - Owner: Platform Product Lead
 - Contributors: Platform Engineering, ML Engineering, Developer Relations

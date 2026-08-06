@@ -1,5 +1,7 @@
 # Feature Store
 
+Мова: Українська (default) | [English](17-feature-store.en.md)
+
 ## Document Metadata
 - Owner: Data Platform Lead
 - Contributors: ML Team, Backend Team, Analytics Team

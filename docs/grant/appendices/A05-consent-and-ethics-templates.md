@@ -1,5 +1,7 @@
 # A05 Consent and Ethics Templates
 
+Мова: Українська (default) | [English](A05-consent-and-ethics-templates.en.md)
+
 ## Purpose
 Checklist and placeholders for consent forms, participant information sheets, and ethics review packages.
 

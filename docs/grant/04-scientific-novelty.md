@@ -1,5 +1,7 @@
 # Scientific Novelty
 
+Мова: Українська (default) | [English](04-scientific-novelty.en.md)
+
 ## Document Metadata
 - Owner: Scientific Coordinator
 - Contributors: ML Lead, Decision Science Lead, Product Research Lead

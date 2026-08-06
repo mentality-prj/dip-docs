@@ -1,5 +1,7 @@
 # A02 Dataset Dictionary
 
+Мова: Українська (default) | [English](A02-dataset-dictionary.en.md)
+
 ## Purpose
 Canonical dictionary for all features, labels, and data entities used in research and production.
 

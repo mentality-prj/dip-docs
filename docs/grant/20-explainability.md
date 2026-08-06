@@ -1,5 +1,7 @@
 # Explainability
 
+Мова: Українська (default) | [English](20-explainability.en.md)
+
 ## Document Metadata
 - Owner: Explainable AI Lead
 - Contributors: Product Research, ML Team, Decision Science Team

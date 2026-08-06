@@ -1,5 +1,7 @@
 # GDPR
 
+Мова: Українська (default) | [English](36-gdpr.en.md)
+
 ## Document Metadata
 - Owner: Data Protection Officer
 - Contributors: Legal, Security, Platform Team

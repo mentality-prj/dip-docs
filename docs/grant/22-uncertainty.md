@@ -1,5 +1,7 @@
 # Uncertainty Estimation
 
+Мова: Українська (default) | [English](22-uncertainty.en.md)
+
 ## Document Metadata
 - Owner: ML Lead
 - Contributors: Decision Science, Responsible AI Lead

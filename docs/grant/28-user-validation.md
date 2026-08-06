@@ -1,5 +1,7 @@
 # User Validation
 
+Мова: Українська (default) | [English](28-user-validation.en.md)
+
 ## Document Metadata
 - Owner: Product Research Lead
 - Contributors: UX Team, Data Science, Ethics Lead

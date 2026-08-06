@@ -1,5 +1,7 @@
 # Label Definition
 
+Мова: Українська (default) | [English](10-label-definition.en.md)
+
 ## Document Metadata
 - Owner: ML Lead
 - Contributors: Decision Science, Clinical Advisor, Data Team

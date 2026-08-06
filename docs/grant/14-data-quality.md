@@ -1,5 +1,7 @@
 # Data Quality
 
+Мова: Українська (default) | [English](14-data-quality.en.md)
+
 ## Document Metadata
 - Owner: Data Quality Lead
 - Contributors: Data Platform, ML Team, Research Ops

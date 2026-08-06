@@ -1,5 +1,7 @@
 # DIP Architecture
 
+Мова: Українська (default) | [English](15-dip-architecture.en.md)
+
 ## Document Metadata
 - Owner: Platform Architect
 - Contributors: Backend Lead, ML Lead, DevOps Lead

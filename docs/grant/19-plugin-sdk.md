@@ -1,5 +1,7 @@
 # Plugin SDK
 
+Мова: Українська (default) | [English](19-plugin-sdk.en.md)
+
 ## Document Metadata
 - Owner: Platform Architect
 - Contributors: Core Backend Team, Developer Experience Lead

@@ -1,5 +1,7 @@
 # Ground Truth
 
+Мова: Українська (default) | [English](11-ground-truth.en.md)
+
 ## Document Metadata
 - Owner: Research Quality Lead
 - Contributors: Clinical Advisor, Data Science, Product Research

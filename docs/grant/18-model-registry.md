@@ -1,5 +1,7 @@
 # Model Registry
 
+Мова: Українська (default) | [English](18-model-registry.en.md)
+
 ## Document Metadata
 - Owner: MLOps Lead
 - Contributors: ML Team, Platform Team, QA

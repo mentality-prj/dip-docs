@@ -1,5 +1,7 @@
 # Reproducibility
 
+Мова: Українська (default) | [English](30-reproducibility.en.md)
+
 ## Document Metadata
 - Owner: Reproducibility Lead
 - Contributors: Research Platform, ML Team, QA

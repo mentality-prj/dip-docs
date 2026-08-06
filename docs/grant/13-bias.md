@@ -1,5 +1,7 @@
 # Bias Analysis
 
+Мова: Українська (default) | [English](13-bias.en.md)
+
 ## Document Metadata
 - Owner: Responsible AI Lead
 - Contributors: Data Science, Ethics Lead, Product Analytics

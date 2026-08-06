@@ -1,5 +1,7 @@
 # Statistical Analysis
 
+Мова: Українська (default) | [English](12-statistics.en.md)
+
 ## Document Metadata
 - Owner: Biostatistics Lead
 - Contributors: Data Scientists, Research Analysts

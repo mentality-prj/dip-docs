@@ -1,5 +1,7 @@
 # Dzvin.co Product
 
+Мова: Українська (default) | [English](31-dzvin.en.md)
+
 ## Document Metadata
 - Owner: Product Lead (Dzvin.co)
 - Contributors: Backend Team, UX Team, Research Team

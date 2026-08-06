@@ -1,5 +1,7 @@
 # State of the Art
 
+Мова: Українська (default) | [English](03-state-of-the-art.en.md)
+
 ## Document Metadata
 - Owner: Scientific Coordinator
 - Contributors: Market Intelligence, ML Team, Product Strategy

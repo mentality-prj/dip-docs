@@ -1,5 +1,7 @@
 # Feature Engineering
 
+Мова: Українська (default) | [English](09-feature-engineering.en.md)
+
 ## Document Metadata
 - Owner: ML Engineering Lead
 - Contributors: Data Platform, Research Scientists

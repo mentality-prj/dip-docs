@@ -1,5 +1,7 @@
 # Research Questions
 
+Мова: Українська (default) | [English](05-research-questions.en.md)
+
 ## Document Metadata
 - Owner: Scientific Coordinator
 - Contributors: ML Lead, Product Research, Clinical Advisor

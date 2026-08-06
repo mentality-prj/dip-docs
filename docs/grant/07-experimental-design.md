@@ -1,5 +1,7 @@
 # Experimental Design
 
+Мова: Українська (default) | [English](07-experimental-design.en.md)
+
 ## Document Metadata
 - Owner: Experimentation Lead
 - Contributors: ML Team, Research Ops, Product Analytics

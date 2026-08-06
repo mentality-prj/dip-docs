@@ -1,5 +1,7 @@
 # Dataset Specification
 
+Мова: Українська (default) | [English](08-dataset-specification.en.md)
+
 ## Document Metadata
 - Owner: Data Governance Lead
 - Contributors: Research Ops, Backend, Privacy Officer

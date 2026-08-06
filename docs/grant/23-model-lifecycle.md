@@ -1,5 +1,7 @@
 # Model Lifecycle
 
+Мова: Українська (default) | [English](23-model-lifecycle.en.md)
+
 ## Document Metadata
 - Owner: MLOps Lead
 - Contributors: ML Team, Platform Team, QA

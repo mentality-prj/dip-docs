@@ -1,5 +1,7 @@
 # Ethics
 
+Мова: Українська (default) | [English](37-ethics.en.md)
+
 ## Document Metadata
 - Owner: Ethics Lead
 - Contributors: Clinical Advisors, Research Team, Product Team

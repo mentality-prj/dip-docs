@@ -1,5 +1,7 @@
 # Dissemination
 
+Мова: Українська (default) | [English](41-dissemination.en.md)
+
 ## Document Metadata
 - Owner: Dissemination Lead
 - Contributors: Scientific Coordinator, Marketing, Partnerships

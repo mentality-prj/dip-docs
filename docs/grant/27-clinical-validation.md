@@ -1,5 +1,7 @@
 # Clinical Validation
 
+Мова: Українська (default) | [English](27-clinical-validation.en.md)
+
 ## Document Metadata
 - Owner: Clinical Research Coordinator
 - Contributors: Ethics Lead, Product Research, External Advisors

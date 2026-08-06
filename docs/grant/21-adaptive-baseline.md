@@ -1,5 +1,7 @@
 # Adaptive Baseline
 
+Мова: Українська (default) | [English](21-adaptive-baseline.en.md)
+
 ## Document Metadata
 - Owner: Decision Science Lead
 - Contributors: ML Team, Analytics Team

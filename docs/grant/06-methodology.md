@@ -1,5 +1,7 @@
 # Research Methodology
 
+Мова: Українська (default) | [English](06-methodology.en.md)
+
 ## Document Metadata
 - Owner: Research Methodology Lead
 - Contributors: Scientific Coordinator, ML Lead, Product Research

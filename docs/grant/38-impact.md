@@ -1,5 +1,7 @@
 # Impact
 
+Мова: Українська (default) | [English](38-impact.en.md)
+
 ## Document Metadata
 - Owner: Impact Lead
 - Contributors: Product, Research, Partnerships, Policy

@@ -1,5 +1,7 @@
 # Risk Management
 
+Мова: Українська (default) | [English](44-risk-management.en.md)
+
 ## Document Metadata
 - Owner: Risk Manager
 - Contributors: All Work Package Leads

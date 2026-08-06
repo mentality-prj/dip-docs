@@ -1,5 +1,7 @@
 # Dzvin.co + DIP Research Documentation Pack
 
+Мова: Українська (default) | [English](README.en.md)
+
 ## Purpose
 
 This directory contains a reusable R&D documentation pack for grant applications (Horizon Europe, EIC Pathfinder, Eurostars) and for internal engineering/scientific alignment.
