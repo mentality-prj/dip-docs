@@ -6,6 +6,7 @@ This directory contains documents assembled for submission to a specific grant c
 Each section is composed from `docs/grant/*` and `docs/research/*`, not written from scratch.
 
 ## Structure
+
 1. 01-excellence.md
 2. 02-impact.md
 3. 03-implementation.md
@@ -14,9 +15,11 @@ Each section is composed from `docs/grant/*` and `docs/research/*`, not written 
 6. 06-ethics.md
 
 ## Assembly Rule
+
 Every claim in proposal documents must reference a specific row in `docs/research/01-traceability-matrix.md`.
 
 ## Horizon Europe References
+
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en
