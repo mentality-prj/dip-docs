@@ -18,15 +18,15 @@ Statuses:
 
 ## Catalog
 
-1. [0001-python.md](0001-python.md)
-2. [0002-mongodb.md](0002-mongodb.md)
-3. [0003-fastapi.md](0003-fastapi.md)
-4. [0004-plugin-sdk.md](0004-plugin-sdk.md)
-5. [0005-hybrid-rule-ml.md](0005-hybrid-rule-ml.md)
-6. [0006-explainability-first.md](0006-explainability-first.md)
-7. [0007-multi-tenancy-model.md](0007-multi-tenancy-model.md)
-8. [0008-event-audit-model.md](0008-event-audit-model.md)
-9. [0009-dip-as-independent-product.md](0009-dip-as-independent-product.md)
+1. [0001-python.en.md](0001-python.en.md)
+2. [0002-mongodb.en.md](0002-mongodb.en.md)
+3. [0003-fastapi.en.md](0003-fastapi.en.md)
+4. [0004-plugin-sdk.en.md](0004-plugin-sdk.en.md)
+5. [0005-hybrid-rule-ml.en.md](0005-hybrid-rule-ml.en.md)
+6. [0006-explainability-first.en.md](0006-explainability-first.en.md)
+7. [0007-multi-tenancy-model.en.md](0007-multi-tenancy-model.en.md)
+8. [0008-event-audit-model.en.md](0008-event-audit-model.en.md)
+9. [0009-dip-as-independent-product.en.md](0009-dip-as-independent-product.en.md)
 
 ## Horizon Europe References
 

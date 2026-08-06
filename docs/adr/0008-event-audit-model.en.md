@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0008: Event and Audit Model
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0008-event-audit-model.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+The project requires auditable decision traces, experiment evidence, and operational risk control.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. Minimal logs only
+2. Separate analytics store without audit guarantees
+3. Structured event and audit model with immutable traces
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+A structured event and audit model with immutable traces is adopted.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Decision and policy changes can be replayed and reviewed.
+- Audit volume and storage costs increase, but evidence quality improves.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

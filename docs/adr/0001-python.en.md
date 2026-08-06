@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0001: Python as DIP Core Language
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0001-python.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+DIP requires rapid development of AI/ML integration, data pipelines, and explainability tooling.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. Python
+2. TypeScript/Node.js
+3. JVM stack
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+Python is selected as the core language for DIP.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Pros: strong AI/ML ecosystem, fast R&D iteration cycle.
+- Cons: requires extra attention to performance tuning in high-load API paths.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

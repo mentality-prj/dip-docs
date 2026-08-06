@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0006: Explainability-First Decision Contract
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0006-explainability-first.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+A sensitive domain requires explanations as part of the decision, not a post-hoc UI add-on.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. Explainability as optional UI layer
+2. Explainability as diagnostics only
+3. Explainability as part of core decision contract
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+Explainability is part of the core decision contract.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Every high-impact decision must return trace, rationale, and confidence context.
+- API contract becomes richer and more suitable for audit and grant validation.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0003: FastAPI for DIP API Layer
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0003-fastapi.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+An API-first approach is needed with fast typed contract development and async readiness.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. FastAPI
+2. Flask
+3. Django REST
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+FastAPI is selected.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Pros: Pydantic validation, async support, clear OpenAPI generation.
+- Cons: requires discipline in backward compatibility for evolving contracts.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

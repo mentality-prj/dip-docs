@@ -1,5 +1,7 @@
 # ADR-0007: Multi-Tenancy Model
 
+Мова: Українська (default) | [English](0007-multi-tenancy-model.en.md)
+
 ## Status
 
 Accepted

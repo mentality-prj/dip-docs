@@ -1,5 +1,7 @@
 # ADR-0005: Hybrid Rule+ML Decision Policy
 
+Мова: Українська (default) | [English](0005-hybrid-rule-ml.en.md)
+
 ## Status
 Accepted
 

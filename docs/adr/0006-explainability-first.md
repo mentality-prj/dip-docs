@@ -1,5 +1,7 @@
 # ADR-0006: Explainability-First Decision Contract
 
+Мова: Українська (default) | [English](0006-explainability-first.en.md)
+
 ## Status
 
 Accepted

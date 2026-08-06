@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0004: Plugin SDK for Extensibility
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0004-plugin-sdk.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+DIP must scale without core modifications when adding domain or ML capabilities.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. Plugin SDK with manifest and capability model
+2. Direct in-core module additions
+3. External sidecar-only integration
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+Plugin SDK approach is selected.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Pros: controlled extensibility, faster domain scaling.
+- Cons: more complex governance (compatibility, security review, deprecation path).
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

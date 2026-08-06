@@ -1,5 +1,7 @@
 # ADR-0009: DIP as Independent Product
 
+Мова: Українська (default) | [English](0009-dip-as-independent-product.en.md)
+
 ## Status
 
 Accepted

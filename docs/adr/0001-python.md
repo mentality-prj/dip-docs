@@ -1,5 +1,7 @@
 # ADR-0001: Python as DIP Core Language
 
+Мова: Українська (default) | [English](0001-python.en.md)
+
 ## Status
 Accepted
 

@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0009: DIP as Independent Product
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0009-dip-as-independent-product.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+DIP must remain reusable across multiple products and domains, rather than becoming an internal Dzvin.co module.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. DIP embedded directly in Dzvin.co
+2. DIP as internal library only
+3. DIP as an independent platform product with public API boundaries
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+DIP is maintained as an independent platform product.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Clear separation between platform core and application layer.
+- Easier reuse for future products and grant narratives.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

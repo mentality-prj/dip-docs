@@ -1,24 +1,24 @@
-# ADR-0002: MongoDB for Flexible Domain and Event Data
+# ADR-0007: Multi-Tenancy Model
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0007-multi-tenancy-model.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+DIP and Dzvin.co must isolate data and execution context across organizations and tenants.
 
 ## Options
-1. MongoDB
-2. Relational-only approach
-3. Hybrid polyglot storage from day one
+1. Shared tenant-unaware model
+2. Separate deployments per tenant
+3. Tenant-scoped logical isolation on shared platform
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+Tenant-scoped logical isolation on a shared platform is adopted.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Access control and audit become mandatory at every decision boundary.
+- Lower infrastructure duplication than full per-tenant deployments.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

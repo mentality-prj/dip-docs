@@ -1,5 +1,7 @@
 # ADR-0004: Plugin SDK for Extensibility
 
+Мова: Українська (default) | [English](0004-plugin-sdk.en.md)
+
 ## Status
 Accepted
 

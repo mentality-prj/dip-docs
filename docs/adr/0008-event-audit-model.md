@@ -1,5 +1,7 @@
 # ADR-0008: Event and Audit Model
 
+Мова: Українська (default) | [English](0008-event-audit-model.en.md)
+
 ## Status
 
 Accepted

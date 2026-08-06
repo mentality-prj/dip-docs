@@ -1,12 +1,12 @@
 # ADR-0002: MongoDB for Flexible Domain and Event Data
 
-Мова: Українська (default) | [English](0002-mongodb.en.md)
+Language: [Українська (default)](0002-mongodb.md) | English
 
 ## Status
 Accepted
 
 ## Context
-Потрібні гнучкі схеми для workflow, decision artifacts, audit/event records.
+Flexible schemas are needed for workflows, decision artifacts, and audit/event records.
 
 ## Options
 1. MongoDB
@@ -14,11 +14,11 @@ Accepted
 3. Hybrid polyglot storage from day one
 
 ## Decision
-MongoDB використовується як primary operational store для поточного етапу.
+MongoDB is used as the primary operational store at the current stage.
 
 ## Consequences
-- Плюси: schema flexibility, швидка ітерація доменної моделі.
-- Мінуси: необхідні жорсткі governance правила для consistency і indexing.
+- Pros: schema flexibility, faster domain model iteration.
+- Cons: requires strict governance for consistency and indexing.
 
 ## Horizon Europe References
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

@@ -1,5 +1,7 @@
 # ADR-0003: FastAPI for DIP API Layer
 
+Мова: Українська (default) | [English](0003-fastapi.en.md)
+
 ## Status
 Accepted
 
