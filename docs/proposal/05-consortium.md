@@ -1,15 +1,22 @@
 # 05 Consortium
 
+Мова: Українська (default) | [English](05-consortium.en.md)
+
 ## 5.1 Roles and Competences
+
 Source:
+
 - docs/research/08-consortium-handbook.md
 
 ## 5.2 Governance and Decision-making
+
 Source:
+
 - docs/grant/42-work-packages.md
 - docs/grant/44-risk-management.md
 
 ## Horizon Europe References
+
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en

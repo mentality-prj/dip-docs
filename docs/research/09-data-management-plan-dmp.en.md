@@ -1,10 +1,10 @@
 # Data Management Plan (DMP)
 
-Мова: Українська (default) | [English](09-data-management-plan-dmp.en.md)
+Language: [Українська (default)](09-data-management-plan-dmp.md) | English
 
-## Мета
+## Purpose
 
-Визначити життєвий цикл даних за FAIR-принципами і вимогами європейських програм.
+Define the data lifecycle according to FAIR principles and European programme requirements.
 
 ## FAIR Mapping
 

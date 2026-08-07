@@ -1,13 +1,13 @@
 # Competitive Landscape
 
-Мова: Українська (default) | [English](06-competitive-landscape.en.md)
+Language: [Українська (default)](06-competitive-landscape.md) | English
 
-## Мета
+## Purpose
 
-Порівняти:
+Compare:
 
-- DIP з Decision Intelligence / MLOps платформами.
-- Dzvin.co з mental wellbeing продуктами.
+- DIP with Decision Intelligence / MLOps platforms.
+- Dzvin.co with mental wellbeing products.
 
 ## Comparison Axes
 
@@ -34,9 +34,9 @@
 | Explainable risk outputs     | Explicit target   | Often limited             |
 | R&D traceability integration | Platform-linked   | Rare                      |
 
-## Next step
+## Next Step
 
-- Заповнити фактами з підтвердженими публічними джерелами та benchmark evidence.
+- Populate this framework with confirmed public sources and benchmark evidence.
 
 ## Horizon Europe References
 

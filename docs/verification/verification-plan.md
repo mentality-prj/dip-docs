@@ -1,5 +1,7 @@
 # Verification Plan
 
+Мова: Українська (default) | [English](verification-plan.en.md)
+
 ## Purpose
 
 Описати, як вимоги SRS будуть верифіковані через тести, benchmark-и, audit-и та user validation.
@@ -20,6 +22,7 @@
 - Partial evidence must be marked `Partial` and reviewed in the next cycle.
 
 ## Horizon Europe References
+
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en

@@ -1,36 +1,29 @@
-# 01 Excellence
+# 02 Impact
 
-Мова: Українська (default) | [English](01-excellence.en.md)
+Language: [Українська (default)](02-impact.md) | English
 
-## 1.1 Vision and Objectives
-
-Source:
-
-- docs/grant/01-vision.md
-- docs/grant/02-problem-statement.md
-
-## 1.2 Beyond State of the Art
+## 2.1 Expected Outcomes and Impacts
 
 Source:
 
-- docs/grant/03-state-of-the-art.md
-- docs/grant/04-scientific-novelty.md
+- docs/grant/38-impact.en.md
+- docs/grant/39-exploitation.en.md
+- docs/grant/40-commercialisation.en.md
 
-## 1.3 Scientific Hypotheses and Methods
-
-Source:
-
-- docs/research/02-scientific-hypotheses.md
-- docs/grant/06-methodology.md
-- docs/grant/07-experimental-design.md
-- docs/grant/12-statistics.md
-
-## 1.4 Evidence and Traceability
+## 2.2 Measures to Maximize Impact
 
 Source:
 
-- docs/research/01-traceability-matrix.md
-- docs/grant/30-reproducibility.md
+- docs/grant/41-dissemination.en.md
+- docs/research/06-competitive-landscape.en.md
+- docs/research/07-ip-strategy.en.md
+
+## 2.3 KPI Framework
+
+Source:
+
+- docs/grant/26-metrics.en.md
+- docs/research/03-wp-success-criteria.en.md
 
 ## Horizon Europe References
 

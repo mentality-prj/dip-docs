@@ -1,14 +1,14 @@
 # IP Strategy
 
-Мова: Українська (default) | [English](07-ip-strategy.en.md)
+Language: [Українська (default)](07-ip-strategy.md) | English
 
-## Мета
+## Purpose
 
-Визначити межі між proprietary, open та potentially patentable активами.
+Define the boundaries between proprietary, open, and potentially patentable assets.
 
 ## IP Buckets
 
-- Potentially patentable: специфічні decision governance механізми, якщо novelty and jurisdiction criteria met.
+- Potentially patentable: specific decision-governance mechanisms, if novelty and jurisdiction criteria are met.
 - Proprietary: production policies, risk calibration playbooks, partner-specific adapters.
 - Open source candidates: non-sensitive utilities, generic SDK components, selected tooling.
 
@@ -20,8 +20,8 @@
 
 ## Licensing Principles
 
-- Відкрите: там, де це прискорює ecosystem adoption.
-- Закрите: там, де це core commercial moat.
+- Open: where it accelerates ecosystem adoption.
+- Closed: where it forms the core commercial moat.
 
 ## Deliverables
 

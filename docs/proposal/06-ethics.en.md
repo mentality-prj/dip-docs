@@ -1,36 +1,28 @@
-# 01 Excellence
+# 06 Ethics
 
-Мова: Українська (default) | [English](01-excellence.en.md)
+Language: [Українська (default)](06-ethics.md) | English
 
-## 1.1 Vision and Objectives
-
-Source:
-
-- docs/grant/01-vision.md
-- docs/grant/02-problem-statement.md
-
-## 1.2 Beyond State of the Art
+## 6.1 Ethics and Responsible AI
 
 Source:
 
-- docs/grant/03-state-of-the-art.md
-- docs/grant/04-scientific-novelty.md
+- docs/grant/37-ethics.en.md
+- docs/grant/13-bias.en.md
+- docs/grant/20-explainability.en.md
 
-## 1.3 Scientific Hypotheses and Methods
-
-Source:
-
-- docs/research/02-scientific-hypotheses.md
-- docs/grant/06-methodology.md
-- docs/grant/07-experimental-design.md
-- docs/grant/12-statistics.md
-
-## 1.4 Evidence and Traceability
+## 6.2 Data Protection and DMP
 
 Source:
 
-- docs/research/01-traceability-matrix.md
-- docs/grant/30-reproducibility.md
+- docs/grant/36-gdpr.en.md
+- docs/research/09-data-management-plan-dmp.en.md
+
+## 6.3 Clinical and Safety Framing
+
+Source:
+
+- docs/grant/27-clinical-validation.en.md
+- docs/grant/35-security.en.md
 
 ## Horizon Europe References
 

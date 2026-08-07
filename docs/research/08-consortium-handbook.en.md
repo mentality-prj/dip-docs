@@ -1,10 +1,10 @@
 # Consortium Handbook
 
-Мова: Українська (default) | [English](08-consortium-handbook.en.md)
+Language: [Українська (default)](08-consortium-handbook.md) | English
 
-## Мета
+## Purpose
 
-Описати ролі та відповідальності партнерів для грантового виконання.
+Describe partner roles and responsibilities for grant execution.
 
 ## Partner Types
 

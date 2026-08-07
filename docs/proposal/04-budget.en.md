@@ -1,36 +1,25 @@
-# 01 Excellence
+# 04 Budget
 
-Мова: Українська (default) | [English](01-excellence.en.md)
+Language: [Українська (default)](04-budget.md) | English
 
-## 1.1 Vision and Objectives
-
-Source:
-
-- docs/grant/01-vision.md
-- docs/grant/02-problem-statement.md
-
-## 1.2 Beyond State of the Art
+## 4.1 Cost Structure
 
 Source:
 
-- docs/grant/03-state-of-the-art.md
-- docs/grant/04-scientific-novelty.md
+- docs/grant/43-budget.en.md
 
-## 1.3 Scientific Hypotheses and Methods
-
-Source:
-
-- docs/research/02-scientific-hypotheses.md
-- docs/grant/06-methodology.md
-- docs/grant/07-experimental-design.md
-- docs/grant/12-statistics.md
-
-## 1.4 Evidence and Traceability
+## 4.2 Cost-to-Work-Package Mapping
 
 Source:
 
-- docs/research/01-traceability-matrix.md
-- docs/grant/30-reproducibility.md
+- docs/research/03-wp-success-criteria.en.md
+- docs/grant/42-work-packages.en.md
+
+## 4.3 Risk-adjusted Financial Plan
+
+Source:
+
+- docs/grant/44-risk-management.en.md
 
 ## Horizon Europe References
 

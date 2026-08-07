@@ -1,10 +1,10 @@
 # Deliverables Register
 
-Мова: Українська (default) | [English](deliverables-register.en.md)
+Language: [Українська (default)](deliverables-register.md) | English
 
 ## Purpose
 
-Операційна таблиця deliverables по WP із owner/deadline/acceptance/dependencies.
+Operational table of deliverables by work package, with owner, deadline, acceptance criteria, and dependencies.
 
 | Deliverable ID | WP  | Deliverable                      | Owner                 | Deadline   | Acceptance Criteria                                                           | Dependencies                       | Related FR/NFR           | Status  |
 | -------------- | --- | -------------------------------- | --------------------- | ---------- | ----------------------------------------------------------------------------- | ---------------------------------- | ------------------------ | ------- |

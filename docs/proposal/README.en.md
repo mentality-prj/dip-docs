@@ -7,16 +7,16 @@ Each section is composed from `docs/grant/*` and `docs/research/*`, not written 
 
 ## Structure
 
-1. 01-excellence.md
-2. 02-impact.md
-3. 03-implementation.md
-4. 04-budget.md
-5. 05-consortium.md
-6. 06-ethics.md
+1. 01-excellence.en.md
+2. 02-impact.en.md
+3. 03-implementation.en.md
+4. 04-budget.en.md
+5. 05-consortium.en.md
+6. 06-ethics.en.md
 
 ## Assembly Rule
 
-Every claim in proposal documents must reference a specific row in `docs/research/01-traceability-matrix.md`.
+Every claim in proposal documents must reference a specific row in `docs/research/01-traceability-matrix.en.md`.
 
 ## Horizon Europe References
 

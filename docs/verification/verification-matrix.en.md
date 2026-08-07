@@ -1,10 +1,10 @@
 # Verification Matrix
 
-Мова: Українська (default) | [English](verification-matrix.en.md)
+Language: [Українська (default)](verification-matrix.md) | English
 
 ## Purpose
 
-Матриця зв'язку Requirement -> Test method -> Evidence -> Status.
+Matrix linking Requirement -> Test method -> Evidence -> Status.
 
 | Requirement | Test method                   | Evidence                      | Status  | Owner               | Notes                              |
 | ----------- | ----------------------------- | ----------------------------- | ------- | ------------------- | ---------------------------------- |

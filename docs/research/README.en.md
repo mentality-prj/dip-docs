@@ -12,25 +12,25 @@ This directory bridges the core R&D documentation with concrete grant submission
 
 ## Contents
 
-1. 01-traceability-matrix.md
-2. 02-scientific-hypotheses.md
-3. 03-wp-success-criteria.md
-4. 04-trl-mapping-evidence.md
-5. 05-technology-readiness-assessment.md
-6. 06-competitive-landscape.md
-7. 07-ip-strategy.md
-8. 08-consortium-handbook.md
-9. 09-data-management-plan-dmp.md
-10. experiment-registry.md
+1. 01-traceability-matrix.en.md
+2. 02-scientific-hypotheses.en.md
+3. 03-wp-success-criteria.en.md
+4. 04-trl-mapping-evidence.en.md
+5. 05-technology-readiness-assessment.en.md
+6. 06-competitive-landscape.en.md
+7. 07-ip-strategy.en.md
+8. 08-consortium-handbook.en.md
+9. 09-data-management-plan-dmp.en.md
+10. experiment-registry.en.md
 
 ## Operational Linkage
 
-- System requirements (SRS): `docs/specification/system-requirements.md`
+- System requirements (SRS): `docs/specification/system-requirements.en.md`
 - Architecture decisions (ADR): `docs/adr/*`
-- Live risk register: `docs/operations/risk-register.md`
-- Deliverables register: `docs/operations/deliverables-register.md`
+- Live risk register: `docs/operations/risk-register.en.md`
+- Deliverables register: `docs/operations/deliverables-register.en.md`
 - Verification layer: `docs/verification/*`
-- Change log: `docs/operations/change-log.md`
+- Change log: `docs/operations/change-log.en.md`
 
 ## Horizon Europe References
 

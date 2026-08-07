@@ -1,36 +1,30 @@
-# 01 Excellence
+# 03 Implementation
 
-Мова: Українська (default) | [English](01-excellence.en.md)
+Language: [Українська (default)](03-implementation.md) | English
 
-## 1.1 Vision and Objectives
-
-Source:
-
-- docs/grant/01-vision.md
-- docs/grant/02-problem-statement.md
-
-## 1.2 Beyond State of the Art
+## 3.1 Work Plan
 
 Source:
 
-- docs/grant/03-state-of-the-art.md
-- docs/grant/04-scientific-novelty.md
+- docs/grant/42-work-packages.en.md
+- docs/grant/44-risk-management.en.md
 
-## 1.3 Scientific Hypotheses and Methods
-
-Source:
-
-- docs/research/02-scientific-hypotheses.md
-- docs/grant/06-methodology.md
-- docs/grant/07-experimental-design.md
-- docs/grant/12-statistics.md
-
-## 1.4 Evidence and Traceability
+## 3.2 Technical Architecture and Delivery
 
 Source:
 
-- docs/research/01-traceability-matrix.md
-- docs/grant/30-reproducibility.md
+- docs/grant/15-dip-architecture.en.md
+- docs/grant/16-decision-engine.en.md
+- docs/grant/33-integration.en.md
+- docs/grant/34-api.en.md
+
+## 3.3 TRL and Readiness
+
+Source:
+
+- docs/grant/45-trl-roadmap.en.md
+- docs/research/04-trl-mapping-evidence.en.md
+- docs/research/05-technology-readiness-assessment.en.md
 
 ## Horizon Europe References
 

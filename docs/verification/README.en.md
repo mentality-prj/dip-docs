@@ -6,12 +6,12 @@ This directory links requirements, implementation, tests, and grant evidence.
 
 ## Contents
 
-1. verification-plan.md
-2. verification-matrix.md
+1. verification-plan.en.md
+2. verification-matrix.en.md
 
 ## Rule
 
-- Every FR/NFR in `docs/specification/system-requirements.md` must have at least one record in `verification-matrix.md`.
+- Every FR/NFR in `docs/specification/system-requirements.en.md` must have at least one record in `verification-matrix.en.md`.
 - Every verification item must include evidence, status, and owner.
 
 ## Horizon Europe References

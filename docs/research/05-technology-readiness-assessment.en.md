@@ -1,36 +1,37 @@
-# 01 Excellence
+# Technology Readiness Assessment
 
-Мова: Українська (default) | [English](01-excellence.en.md)
+Language: [Українська (default)](05-technology-readiness-assessment.md) | English
 
-## 1.1 Vision and Objectives
+## Purpose
 
-Source:
+Assess the readiness of each platform module and product integration in detail.
 
-- docs/grant/01-vision.md
-- docs/grant/02-problem-statement.md
+## Assessment Framework
 
-## 1.2 Beyond State of the Art
+- Functional readiness
+- Operational readiness
+- Security/compliance readiness
+- Validation readiness
 
-Source:
+## Module Cards (Template)
 
-- docs/grant/03-state-of-the-art.md
-- docs/grant/04-scientific-novelty.md
+### Module
 
-## 1.3 Scientific Hypotheses and Methods
+- Current TRL:
+- Target TRL:
+- Evidence available:
+- Gaps:
+- Next actions:
+- Owner:
 
-Source:
+## Initial Module Scope
 
-- docs/research/02-scientific-hypotheses.md
-- docs/grant/06-methodology.md
-- docs/grant/07-experimental-design.md
-- docs/grant/12-statistics.md
-
-## 1.4 Evidence and Traceability
-
-Source:
-
-- docs/research/01-traceability-matrix.md
-- docs/grant/30-reproducibility.md
+- Decision Engine
+- Feature Store
+- Model Registry
+- Explainability Layer
+- Integration API Layer
+- Online Governance and Diagnostics
 
 ## Horizon Europe References
 
