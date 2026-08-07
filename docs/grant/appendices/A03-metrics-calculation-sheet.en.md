@@ -3,9 +3,11 @@
 Language: [Українська (default)](A03-metrics-calculation-sheet.md) | English
 
 ## Purpose
+
 Exact register of formulas and thresholds used in production code. Source: `mentality-back`.
 
 ## Code references
+
 - `src/decision-support/helpers/burnout-index.calculator.ts`
 - `src/decision-support/helpers/ml-risk.engine.ts`
 - `src/decision-support/helpers/adaptive-risk.engine.ts`
@@ -30,6 +32,7 @@ burnoutIndex =
 ```
 
 Where:
+
 - `stress_norm = (avgStress − 1) / 4` (scale 1–5)
 - `mood_norm = (avgMood − 1) / 4` (inverted: lower mood → higher score)
 - `energy_norm = (avgEnergy − 1) / 4` (inverted)
@@ -46,14 +49,14 @@ Where:
 
 **Factor triggers:**
 
-| Factor | Trigger condition |
-|--------|-------------------|
-| high_stress | stress_norm > 0.6 |
-| low_mood | (1−mood_norm) > 0.6 |
-| low_energy | (1−energy_norm) > 0.6 |
-| low_focus | (1−focus_norm) > 0.6 |
+| Factor                  | Trigger condition     |
+| ----------------------- | --------------------- |
+| high_stress             | stress_norm > 0.6     |
+| low_mood                | (1−mood_norm) > 0.6   |
+| low_energy              | (1−energy_norm) > 0.6 |
+| low_focus               | (1−focus_norm) > 0.6  |
 | high_risk_concentration | high_risk_ratio > 0.3 |
-| low_engagement | engagement_gap > 0.4 |
+| low_engagement          | engagement_gap > 0.4  |
 
 ---
 
@@ -192,20 +195,21 @@ Where `actualScore ∈ {0.0 (not_worsened), 0.5 (inconclusive), 1.0 (worsened)}`
 
 Deterministic rule conditions applied per team/company:
 
-| Rule | Condition | Action type | Priority |
-|------|-----------|-------------|----------|
-| R-1 | avgStress ≥ 4.0 AND highRiskRatio > 40% | team_intervention | high |
-| R-2 | mediumPlusRiskRatio > 25% AND highRiskRatio ≤ 40% | manager_alert | medium |
-| R-3 | avgMood ≤ 2.5 | team_intervention | medium |
-| R-4 | avgEnergy ≤ 2.5 | manager_alert | medium |
-| R-5 | avgFocus ≤ 2.5 | manager_alert | low |
-| R-6 | activeEmployees / totalEmployees < 60% | manager_alert | medium |
-| R-7 | Company-wide avgStress ≥ 4.0 | org_change | high |
-| R-8 | Company-wide engagement < 60% | org_change | high |
-| R-9 | stress ↔ GAD-7 correlation ≥ 0.7 | org_change | high |
-| R-10 | stress ↔ PHQ-9 correlation ≥ 0.7 | org_change | high |
+| Rule | Condition                                         | Action type       | Priority |
+| ---- | ------------------------------------------------- | ----------------- | -------- |
+| R-1  | avgStress ≥ 4.0 AND highRiskRatio > 40%           | team_intervention | high     |
+| R-2  | mediumPlusRiskRatio > 25% AND highRiskRatio ≤ 40% | manager_alert     | medium   |
+| R-3  | avgMood ≤ 2.5                                     | team_intervention | medium   |
+| R-4  | avgEnergy ≤ 2.5                                   | manager_alert     | medium   |
+| R-5  | avgFocus ≤ 2.5                                    | manager_alert     | low      |
+| R-6  | activeEmployees / totalEmployees < 60%            | manager_alert     | medium   |
+| R-7  | Company-wide avgStress ≥ 4.0                      | org_change        | high     |
+| R-8  | Company-wide engagement < 60%                     | org_change        | high     |
+| R-9  | stress ↔ GAD-7 correlation ≥ 0.7                  | org_change        | high     |
+| R-10 | stress ↔ PHQ-9 correlation ≥ 0.7                  | org_change        | high     |
 
 **Severity enrichment (baseline-aware):**
+
 ```
 stressDelta = avgStress − prevAvgStress
 
@@ -216,6 +220,7 @@ severity = critical  if avgStress ≥ 4.0 AND highRiskRatio > 0.4 AND stressDelt
 ```
 
 **Signal confidence:**
+
 ```
 engagement = activeEmployees / totalEmployees
 confidence = 1.0  if totalEmployees ≥ 20 AND engagement ≥ 0.7
@@ -238,6 +243,7 @@ attritionPct(index):
 ```
 
 Replacement cost:
+
 ```
 replacementCostPerEmployee = avgAnnualSalary × replacementFactor
 
@@ -256,10 +262,10 @@ estimatedProductivityLoss = activeEmployees × avgMonthlySalary × (productivity
 **Productivity and sick-days table (source: Gallup, WHO, SHRM):**
 
 | Burnout level | Productivity loss | Sick days increase |
-|---------------|-------------------|--------------------|
-| low | 0–5% | +0–5% |
-| medium | 5–12% | +5–15% |
-| high | 12–25% | +15–30% |
+| ------------- | ----------------- | ------------------ |
+| low           | 0–5%              | +0–5%              |
+| medium        | 5–12%             | +5–15%             |
+| high          | 12–25%            | +15–30%            |
 
 Default `avgAnnualSalary = €60,000`.
 
@@ -276,6 +282,7 @@ ewma_t = α × value_t + (1 − α) × ewma_{t−1}
 Where `α = 0.38` (recency weight parameter).
 
 **Weighted standard deviation with recency decay:**
+
 ```
 weight_i = 0.92^(N − 1 − i)   # 0.92 = RECENCY_DECAY, i = position ascending
 variance  = Σ(weight_i × (value_i − ewma)²) / Σ(weight_i)
@@ -283,6 +290,7 @@ std       = max(sqrt(variance), 0.18)   # floor = MIN_STD
 ```
 
 **Baseline confidence:**
+
 ```
 coverage  = clamp(n_samples / 10, 0, 1)
 recency   = 1.00 if hours_since_last ≤ 48
@@ -297,13 +305,14 @@ confidence = clamp(0.20 + coverage × 0.40 + recency × 0.15 + stability × 0.25
 
 ## 12. Risk Levels (individual, from riskScore)
 
-| Level | Condition |
-|-------|-----------|
-| low | riskScore < 0.38 |
+| Level  | Condition               |
+| ------ | ----------------------- |
+| low    | riskScore < 0.38        |
 | medium | 0.38 ≤ riskScore < 0.68 |
-| high | riskScore ≥ 0.68 |
+| high   | riskScore ≥ 0.68        |
 
 Uncertainty classification:
+
 ```
 uncertaintyLevel = high    if confidence < 0.45 OR uncertaintyCoefficient ≥ 1.15
                  = medium  if confidence < 0.70 OR uncertaintyCoefficient ≥ 0.70
@@ -330,6 +339,7 @@ actualOutcome = worsened     if worsenedByDeltaAndVolatility OR worsenedByMoodAn
 ```
 
 ## Horizon Europe References
+
 - EIC Work Programme 2026: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
 - Funding and Tenders Portal (application process): https://research-and-innovation.ec.europa.eu/funding/how-apply/application-process_en
 - EIC Pathfinder FAQ (eligibility and conditions): https://eic.ec.europa.eu/eic-frequently-asked-questions/faqs-general-conditions-and-eligibility_en
