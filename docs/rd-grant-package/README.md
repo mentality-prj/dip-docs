@@ -22,11 +22,11 @@
 
 | Файл                                                                   | Зміст                                                                 | Стор. |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------- | ----- |
-| [A-naukova-postanovka.md](A-naukova-postanovka.md)                     | Наукова постановка: проблема, аналіз підходів, гіпотеза, модель       | ~15   |
-| [B-plan-br.md](B-plan-br.md)                                           | План B+R: етапи Д1–Д10, метод, результат, критерій, рівень готовності | ~8    |
-| [C-eksperymentalna-metodolohiia.md](C-eksperymentalna-metodolohiia.md) | Experiment design, baselines, metrics, backtesting, significance      | ~6    |
-| [F-innovatsiina-tablytsia.md](F-innovatsiina-tablytsia.md)             | Порівняльна таблиця: метод → що вміє → чого не вміє → наш внесок      | ~4    |
-| [G-biudzhet.md](G-biudzhet.md)                                         | Структура бюджету, обґрунтування статей, принцип допустимості витрат  | ~4    |
+| [A-scientific-problem-statement.md](A-scientific-problem-statement.md) | Наукова постановка: проблема, аналіз підходів, гіпотеза, модель       | ~15   |
+| [B-rd-work-plan.md](B-rd-work-plan.md)                                 | План B+R: етапи Д1–Д10, метод, результат, критерій, рівень готовності | ~8    |
+| [C-experimental-methodology.md](C-experimental-methodology.md)         | Experiment design, baselines, metrics, backtesting, significance      | ~6    |
+| [F-innovation-analysis.md](F-innovation-analysis.md)                   | Порівняльна таблиця: метод → що вміє → чого не вміє → наш внесок      | ~4    |
+| [G-budget-structure.md](G-budget-structure.md)                         | Структура бюджету, обґрунтування статей, принцип допустимості витрат  | ~4    |
 
 ## Посилання на технічну базу
 

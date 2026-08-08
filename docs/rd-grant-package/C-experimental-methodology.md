@@ -168,7 +168,7 @@ Progresyvno vnosyty znachushche znachennya stress_t v testovi dani:
 
 ## Posylannya
 
-- Pov'yazani dokumenty: A-naukova-postanovka.md (H1-H5), B-plan-br.md (Д7, Д8, Д10)
+- Related docs: A-scientific-problem-statement.md (H1-H5), B-rd-work-plan.md (Д7, Д8, Д10)
 - Formuly: ../grant/appendices/A03-metrics-calculation-sheet.md
 - PARP Ścieżka SMART: https://www.parp.gov.pl/harmonogram-naborow/grants/sciezka-smart
 - EIC Pathfinder: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

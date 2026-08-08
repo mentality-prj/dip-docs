@@ -177,7 +177,7 @@ $$\text{stability} = 1 - 0.4\,\delta_{\text{state}} - 0.35\,(R_{\text{worst}}-R_
 
 ## Посилання
 
-- Пов'язані документи: B-plan-br.md, C-eksperymentalna-metodolohiia.md, ../research/12-knu-rd-plan.md
+- Пов'язані документи: B-rd-work-plan.md, C-experimental-methodology.md, ../research/12-knu-rd-plan.md
 - Технічна база: ../grant/appendices/A03-metrics-calculation-sheet.md
 - PARP Ścieżka SMART: https://www.parp.gov.pl/harmonogram-naborow/grants/sciezka-smart
 - EIC Pathfinder: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en

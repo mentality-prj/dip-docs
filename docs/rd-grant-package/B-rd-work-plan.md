@@ -346,6 +346,6 @@ $$\hat{\mathbf{w}} = \arg\min_{\mathbf{w}} \frac{1}{N}\sum_i |\text{riskScore}_i
 
 ## Posylannya
 
-- Pov'yazani dokumenty: A-naukova-postanovka.md, C-eksperymentalna-metodolohiia.md
+- Related docs: A-scientific-problem-statement.md, C-experimental-methodology.md
 - PARP Ścieżka SMART: https://www.parp.gov.pl/harmonogram-naborow/grants/sciezka-smart
 - EIC Pathfinder: https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
