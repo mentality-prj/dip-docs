@@ -8,6 +8,7 @@
 ## 1.1 Vision and Objectives
 
 **Chain of evidence:**
+
 ```
 Existing system (Dzvin.co + DIP MVP)
     ↓ mathematical problem (heuristic weights, no personalised baseline)
@@ -26,6 +27,7 @@ Source:
 ## 1.2 Beyond State of the Art
 
 **Key differentiation:**
+
 - Wellbeing platforms: static dashboards; this system: 5-dimensional state vectors with minimax risk bounds
 - MLOps platforms: no domain-specific governance for mental wellbeing
 - Heuristic components (surrogate regression, manual weights) are research targets, not claims
@@ -38,13 +40,13 @@ Source:
 
 ## 1.3 Scientific Hypotheses and Methods
 
-| H | Statement | Experiment | Key metric |
-|---|-----------|------------|------------|
-| H1 | Hybrid > ML-only and rules-only | EXP-HYB-002 | AUROC, false alert rate |
-| H2 | Personal EWMA baseline > population | EXP-AB-001 | Calibration error |
-| H3 | Explainability increases trust | EXP-XAI-003 | Trust uplift ≥ +10% |
-| H4 | Adaptive features stable under drift | EXP-004 | Drift resilience index |
-| H5 | Governance loops reduce degraded periods | EXP-GOV-004 | Degraded cycle duration |
+| H   | Statement                                | Experiment  | Key metric              |
+| --- | ---------------------------------------- | ----------- | ----------------------- |
+| H1  | Hybrid > ML-only and rules-only          | EXP-HYB-002 | AUROC, false alert rate |
+| H2  | Personal EWMA baseline > population      | EXP-AB-001  | Calibration error       |
+| H3  | Explainability increases trust           | EXP-XAI-003 | Trust uplift ≥ +10%     |
+| H4  | Adaptive features stable under drift     | EXP-004     | Drift resilience index  |
+| H5  | Governance loops reduce degraded periods | EXP-GOV-004 | Degraded cycle duration |
 
 Source:
 
