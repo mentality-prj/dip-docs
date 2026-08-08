@@ -51,6 +51,18 @@
 - Guardrails for rollback.
 - Auto-mitigation on degraded cycles.
 
+## Backtesting on Historical Data
+- Time-based split: training на даних < cutoff, testing на даних ≥ cutoff (no leakage).
+- Rolling-origin backtest: послідовне зміщення cutoff для оцінки стабільності в часі.
+- Replay historical risk events через поточну policy для порівняння з фактичними outcomes.
+- Метрики backtest: AUROC/AUPRC по періодах, calibration drift, alert precision у часі.
+
+## Generalizability Checks
+- Cross-cohort validation: навчання на одних компаніях/командах, тест на інших.
+- Segment robustness: перевірка стабільності метрик по company size, team type, engagement strata.
+- Out-of-distribution probe: оцінка деградації на когортах з нетиповим baseline.
+- Критерій: відсутність critical degradation у жодному захищеному сегменті.
+
 ## Reporting Format
 - Executive summary (non-technical)
 - Technical appendix with metric definitions

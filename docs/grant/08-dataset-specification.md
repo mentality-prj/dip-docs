@@ -20,6 +20,25 @@
 - Organization-level aggregates: team/company risk and participation metrics.
 - Decision artifacts: risk events, action recommendations, policy traces.
 
+## Psychometric Instruments — Scientific Justification
+Вибір шкал обґрунтований валідованими клінічними інструментами:
+
+| Instrument | Що вимірює | Наукова основа |
+|------------|------------|----------------|
+| PHQ-9 | Депресивна симптоматика (9 пунктів) | Kroenke et al., 2001; широко валідований скринінговий інструмент |
+| GAD-7 | Генералізована тривога (7 пунктів) | Spitzer et al., 2006; стандарт для anxiety screening |
+| PSS-4 | Сприйнятий стрес (коротка форма) | Cohen et al., 1983; валідована коротка шкала стресу |
+| K10 | Загальний психологічний дистрес | Kessler et al., 2002; population-level distress screening |
+
+Примітка: інструменти використовуються як **screening / signal**, не як діагноз. Клінічна інтерпретація потребує людського нагляду (див. 27-clinical-validation.md).
+
+## Collection Frequency and Time-Series Structure
+- Daily check-in: mood/stress/energy/focus (щоденна каденція, опційна).
+- Psychometric assessments: періодично (тижнева/місячна каденція за конфігурацією).
+- Rolling windows: 7-денне та 14-денне ковзні середні; 30-денний baseline window.
+- Структура ряду: впорядкована послідовність (event timestamp) з нерівномірними інтервалами; missingness обробляється через freeze logic і recency decay.
+- Мінімум для inference: 30+ mood-записів для persona-level trajectory prediction.
+
 ## Dataset Inventory Template
 Для кожного dataset:
 - dataset_id

@@ -22,6 +22,8 @@
 8. 08-consortium-handbook.md
 9. 09-data-management-plan-dmp.md
 10. experiment-registry.md
+11. 11-rd-technical-dossier.md
+12. 12-knu-rd-plan.md
 
 ## Operational Linkage
 

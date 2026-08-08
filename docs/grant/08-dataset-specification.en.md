@@ -12,6 +12,25 @@ Language: [Українська (default)](08-dataset-specification.md) | Englis
 ## Purpose
 Описати набори даних для R&D та production decision support у Dzvin.co + DIP, їх походження, структуру і обмеження.
 
+## Psychometric Instruments — Scientific Justification
+Scale selection is grounded in validated clinical instruments:
+
+| Instrument | Measures | Scientific basis |
+|------------|----------|------------------|
+| PHQ-9 | Depressive symptoms (9 items) | Kroenke et al., 2001; widely validated screening tool |
+| GAD-7 | Generalised anxiety (7 items) | Spitzer et al., 2006; standard for anxiety screening |
+| PSS-4 | Perceived stress (short form) | Cohen et al., 1983; validated short stress scale |
+| K10 | General psychological distress | Kessler et al., 2002; population-level distress screening |
+
+Note: instruments are used as **screening / signal**, not as diagnosis. Clinical interpretation requires human oversight (see 27-clinical-validation.md).
+
+## Collection Frequency and Time-Series Structure
+- Daily check-in: mood/stress/energy/focus (daily cadence, optional).
+- Psychometric assessments: periodic (weekly/monthly cadence by configuration).
+- Rolling windows: 7-day and 14-day moving averages; 30-day baseline window.
+- Series structure: ordered sequence (event timestamp) with irregular intervals; missingness handled via freeze logic and recency decay.
+- Minimum for inference: 30+ mood records for persona-level trajectory prediction.
+
 ## Dataset Families
 - User self-report events: mood, stress, energy, focus check-ins.
 - Journal and story-derived signals: текстові індикатори (за політикою доступу).

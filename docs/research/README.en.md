@@ -22,6 +22,8 @@ This directory bridges the core R&D documentation with concrete grant submission
 8. 08-consortium-handbook.en.md
 9. 09-data-management-plan-dmp.en.md
 10. experiment-registry.en.md
+11. 11-rd-technical-dossier.en.md
+12. 12-knu-rd-plan.en.md
 
 ## Operational Linkage
 

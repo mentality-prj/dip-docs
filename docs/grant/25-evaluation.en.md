@@ -46,6 +46,18 @@ Language: [Українська (default)](25-evaluation.md) | English
 - No critical degradation in protected or sensitive cohorts.
 - Confidence intervals must exclude harmful regression region.
 
+## Backtesting on Historical Data
+- Time-based split: training on data < cutoff, testing on data ≥ cutoff (no leakage).
+- Rolling-origin backtest: sequential cutoff shifting to assess stability over time.
+- Replay historical risk events through the current policy to compare with actual outcomes.
+- Backtest metrics: AUROC/AUPRC per period, calibration drift, alert precision over time.
+
+## Generalizability Checks
+- Cross-cohort validation: train on some companies/teams, test on others.
+- Segment robustness: verify metric stability across company size, team type, engagement strata.
+- Out-of-distribution probe: assess degradation on cohorts with atypical baseline.
+- Criterion: no critical degradation in any protected segment.
+
 ## Online Evaluation Rules
 - Minimal sample before decisive policy updates.
 - Guardrails for rollback.
