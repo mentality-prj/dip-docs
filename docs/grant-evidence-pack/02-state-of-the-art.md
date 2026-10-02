@@ -4,7 +4,9 @@ Status: initial grant-facing synthesis; expand with peer-reviewed literature mat
 
 ## 1. Scope
 
-QDIP should not claim novelty from optimization itself. Mature solver and enterprise-planning ecosystems already exist. The research gap being tested is whether a reusable formal decision representation and runtime can reduce the engineering required to build heterogeneous operational decision systems while preserving decision quality.
+QDIP should not claim novelty from optimization itself. Mature solver, algebraic-modeling, constraint-modeling and enterprise-planning ecosystems already exist. The research gap being tested is whether a reusable formal decision representation and runtime can reduce the engineering required to build heterogeneous operational decision systems while preserving decision quality.
+
+The novelty claim must therefore be evaluated against both enterprise systems and lightweight optimization/modeling frameworks.
 
 ## 2. Existing solution classes
 
@@ -31,7 +33,7 @@ Boundary relative to QDIP thesis:
 
 ### 2.2 Enterprise operational optimization
 
-SAP Integrated Business Planning provides constrained planning, finite heuristics and optimization algorithms for supply-planning domains. It can model supply networks, selected constraints, planning horizons and optimizer configurations.
+SAP Integrated Business Planning provides constrained planning, heuristics and optimization algorithms for operational planning domains.
 
 Relevant official references:
 
@@ -50,30 +52,72 @@ Boundary relative to QDIP thesis:
 - QDIP does not claim mathematically superior optimality to a specialized enterprise optimizer solving the same formal problem;
 - the proposed advantage is comparable decision quality with materially lower domain-specific engineering and deployment effort.
 
-### 2.3 Optimization modeling frameworks
+### 2.3 Algebraic and constraint modeling frameworks
 
-Pyomo is an open-source Python optimization modeling language that separates model definition from underlying solvers. OR-Tools provides mature open-source combinatorial optimization capabilities, including routing, linear/integer programming and constraint programming.
+The relevant comparison set is broader than Pyomo and OR-Tools. It includes modeling systems such as:
 
-Relevant official references:
+- Pyomo;
+- JuMP;
+- AMPL;
+- MiniZinc;
+- OR-Tools / CP-SAT;
+- solver-native modeling APIs.
+
+These systems already provide strong abstractions over mathematical optimization and can significantly reduce bespoke solver code.
+
+Representative references:
 
 - https://www.pyomo.org/
+- https://jump.dev/
+- https://ampl.com/
+- https://www.minizinc.org/
 - https://developers.google.com/optimization
 
 Strengths:
 
-- mature optimization abstractions;
+- mature mathematical modeling abstractions;
+- symbolic constraints/objectives;
 - broad solver access;
 - strong algorithmic foundations;
-- low license cost for the framework itself.
+- relatively low implementation and/or license cost compared with heavyweight enterprise suites.
 
-Boundary relative to QDIP thesis:
+Critical boundary relative to QDIP thesis:
 
-- solver/modeling frameworks do not by themselves provide a domain-independent decision contract, standardized uncertainty/risk semantics, realized-outcome ingestion, benchmark protocol, replay, economic verification and end-to-end decision audit;
-- this boundary must be demonstrated empirically rather than asserted.
+QDIP cannot claim novelty merely because it defines a Canonical Decision IR. Existing modeling languages already separate model semantics from solver implementation.
+
+The QDIP claim must instead be tested at the larger decision-system lifecycle boundary:
+
+```text
+formal decision contract
++ canonical optimization semantics
++ uncertainty/risk semantics
++ solver abstraction
++ replay/backtesting
++ realized-outcome ingestion
++ reference-normalized evaluation
++ audit/reproducibility
++ cross-domain transfer with measured engineering reduction
+```
+
+Whether this combination produces a material engineering advantage is an empirical question, not an assumed differentiator.
+
+### 2.4 Decision automation / workflow / enterprise AI platforms
+
+Before submission, the literature/product matrix must also cover systems that connect data, models, operational workflows and decisions. This includes enterprise decision automation, planning, AI orchestration and operational-intelligence platforms.
+
+The comparison must distinguish:
+
+- analytics;
+- prediction;
+- mathematical optimization;
+- workflow automation;
+- decision execution;
+- audit/replay;
+- reusable decision semantics.
 
 ## 3. Research gap
 
-The target gap is not "missing optimization algorithms". The target gap is the repeated engineering required to move from a business/operational decision problem to a production-grade decision system.
+The target gap is not "missing optimization algorithms" or "missing modeling languages". The target gap is the repeated engineering required to move from a business/operational decision problem to a production-grade, auditable decision system.
 
 Typical bespoke work includes:
 
@@ -88,20 +132,21 @@ Typical bespoke work includes:
 9. implementing auditability and reproducibility;
 10. deploying and maintaining the resulting pipeline.
 
-QDIP tests whether enough of this lifecycle can be captured by a frozen reusable abstraction layer to cut total engineering effort by at least 50% without materially degrading decision quality.
+QDIP tests whether enough of this lifecycle can be captured by a frozen reusable abstraction layer to cut domain engineering effort materially without degrading decision quality.
 
 ## 4. Novelty claim boundary
 
 Do not claim:
 
 - a new universal optimizer;
-- mathematical superiority to all enterprise optimizers;
+- a novel algebraic modeling language merely because Canonical Decision IR exists;
+- mathematical superiority to enterprise/specialized optimizers solving the same formal problem;
 - automatic causal economic uplift;
 - universal applicability to arbitrary decisions.
 
 The defensible claim under test is:
 
-> A domain-agnostic formal decision representation plus reusable execution/evaluation runtime can transfer across heterogeneous structured operational decision problems while preserving non-inferior decision quality and materially reducing engineering effort.
+> A domain-agnostic formal decision representation plus reusable execution, uncertainty/risk, evaluation, replay and audit runtime can transfer across heterogeneous structured operational decision problems while preserving non-inferior decision quality and materially reducing domain engineering effort.
 
 ## 5. Evidence required before grant submission
 
@@ -113,6 +158,6 @@ The state-of-the-art claim must be supported by:
 - reusable solver/IR frameworks;
 - enterprise planning products;
 - workflow/decision automation systems;
-- evidence that the proposed combination is not already available with the same transferability/effort properties.
+- evidence that the proposed lifecycle-level combination is not already available with the same transferability/effort properties.
 
 Create or update the literature matrix before submission and distinguish clearly between academic novelty, engineering novelty and product differentiation.
