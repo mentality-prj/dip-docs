@@ -9,8 +9,9 @@ Test A provides the first quantitative evidence for the QDIP Universal Runtime t
 Primary goals:
 
 1. test decision-quality non-inferiority versus an equal-scope specialized operational optimizer;
-2. test at least 50% reduction in observed engineering effort;
-3. validate the benchmark/evidence pipeline before Test B and blind Test C.
+2. test at least 50% reduction in domain-marginal observed engineering effort;
+3. report cumulative platform-adjusted effort separately;
+4. validate the benchmark/evidence pipeline before Test B and blind Test C.
 
 ## 2. Decision problem
 
@@ -90,6 +91,8 @@ NR_QDIP^(A) <= NR_specialized^(A) + epsilon_A
 
 The statistical procedure must test non-inferiority directly.
 
+If both implementations encode the same formal model and use the same solver/backend, a successful result is evidence of semantic preservation through the QDIP abstraction, not optimizer superiority.
+
 ## 6. Secondary operational metrics
 
 Report but do not substitute for the primary gate:
@@ -123,12 +126,14 @@ Current values: `TBD before freeze`.
 
 Exploratory stress tests may be added after freeze only if explicitly labeled exploratory and excluded from primary evidence.
 
-## 8. Engineering-effort gate
+## 8. Engineering-effort evaluation
 
-Observed effort:
+### 8.1 Primary domain-marginal gate
+
+Observed domain effort:
 
 ```text
-E_A =
+E_domain,A =
   E_model
 + E_implementation
 + E_test
@@ -140,8 +145,27 @@ E_A =
 Primary engineering gate:
 
 ```text
-E_QDIP^(A) <= 0.5 * E_specialized^(A)
+E_domain,QDIP^(A) <= 0.5 * E_domain,specialized^(A)
 ```
+
+The `50%` threshold is a pre-registered MVP materiality threshold.
+
+### 8.2 Mandatory cumulative metric
+
+Historical/reusable Core, Canonical IR and runtime engineering is not counted as domain-marginal Test A effort, but it must not disappear from the economic evidence.
+
+Report separately:
+
+```text
+E_cumulative,QDIP^(A) = E_core_IR_runtime + E_domain,QDIP^(A)
+E_cumulative,specialized^(A) = E_domain,specialized^(A)
+```
+
+For later domains extend the cumulative comparison across A+B+C to estimate the break-even point of the reusable runtime.
+
+This prevents a false claim that QDIP is already cheaper in total merely because its platform investment was incurred earlier.
+
+### 8.3 Effort ledger rules
 
 For every logged item record:
 
@@ -152,7 +176,9 @@ For every logged item record:
 - artifact/commit/issue reference;
 - reusable-Core vs domain-specific classification.
 
-Do not include historical sunk cost of building generic QDIP Core in the domain-specific Test A effort. Report that cost separately as platform investment. Conversely, do not exclude domain-specific QDIP work merely because it is implemented as a plugin or adapter.
+The specialized baseline must be implemented/evaluated at equivalent quality, test, deployment, reproducibility and audit scope. Contributor competence should be comparable; major asymmetry must be disclosed.
+
+Domain-specific QDIP work cannot be excluded merely because it is implemented as a plugin or adapter.
 
 ## 9. Scope-equivalence checklist
 
@@ -165,7 +191,8 @@ Before freeze, both QDIP and specialized implementation must satisfy the same re
 - same reproducibility requirement;
 - same automated-test target;
 - same deployment target;
-- same audit/evidence target.
+- same audit/evidence target;
+- comparable contributor competence assumptions.
 
 Any justified difference must be pre-registered.
 
@@ -189,6 +216,7 @@ epsilon_A
 reference_rule
 statistical_test
 compute_budget_rule
+engineering_scope_version
 ```
 
 ## 11. Invalid experiment criteria
@@ -204,6 +232,7 @@ Primary evidence is invalid if, after freeze and before unblinding/completion, a
 - unequal information supplied;
 - evaluation metric changed;
 - compute budget unfairly changed;
+- engineering-scope rules changed after observing effort/result comparisons;
 - failed episodes selectively removed;
 - domain-specific bespoke optimization is hidden inside a QDIP plugin.
 
@@ -211,17 +240,19 @@ Invalid runs may be retained as exploratory evidence but must not support the pr
 
 ## 12. Test A pass condition
 
-Test A passes only if both independent criteria pass:
+Test A passes only if both independent primary criteria pass:
 
 ```text
 Decision quality:
 NR_QDIP^(A) <= NR_specialized^(A) + epsilon_A
 
-Engineering:
-E_QDIP^(A) <= 0.5 * E_specialized^(A)
+Domain-marginal engineering:
+E_domain,QDIP^(A) <= 0.5 * E_domain,specialized^(A)
 ```
 
-A pass on one criterion cannot compensate for failure of the other.
+The cumulative platform-adjusted effort is reported separately and cannot be omitted from product/grant economics.
+
+A pass on one primary criterion cannot compensate for failure of the other.
 
 ## 13. Test A evidence output
 
@@ -231,7 +262,8 @@ After execution create `07-test-a-results.md` containing:
 - all primary results;
 - confidence intervals/non-inferiority result;
 - operational metrics;
-- engineering-effort ledger summary;
+- domain-marginal engineering ledger summary;
+- cumulative platform-adjusted effort;
 - invalid/failed runs;
 - deviations from protocol;
 - conclusion limited to the pre-registered claim.
