@@ -81,15 +81,15 @@ This is technically coherent with QDIP because the LLM handles unstructured sema
 - the application requires replacing QDIP's formal runtime with LLM reasoning;
 - the proposed defence use case cannot produce a credible six-month experiment/demonstration;
 - achieving fit requires changing the frozen Universal Runtime thesis;
-- there is no genuine defence mission-planning scenario available for validation.
+- there is no genuine defence mission-planning scenario family available for validation.
 
 No application should be written beyond fit analysis until the formal GO/NO-GO protocol passes.
 
-The formal fit/research test is defined in:
+The formal test is defined in:
 
-- [01 — LLM → DecisionSpec Research Mini-Protocol](01-llm-decision-spec-mini-protocol.md)
+- [01 — LLM → DecisionSpec Bounded Qualification Protocol](01-llm-decision-spec-mini-protocol.md)
 
-The protocol requires ambiguity handling, constraint/objective extraction, controlled abstention, provenance, deterministic validation, failure-mode analysis, manual-gold comparison, naive-LLM ablation and downstream QDIP decision-impact measurement. A plain text-to-JSON implementation is explicitly insufficient.
+It requires ambiguity handling, constraint/objective extraction, controlled abstention, provenance, deterministic validation, failure-mode analysis, manual-gold comparison, naive-LLM ablation, downstream QDIP decision-impact measurement and human-effort reduction. A plain text-to-JSON implementation is explicitly insufficient.
 
 ## 4. GO proof sequence
 
@@ -97,26 +97,28 @@ The BattleVerse GO decision cannot be based on one hand-picked mission scenario.
 
 Required sequence:
 
-1. **one development scenario** — smoke-test the implementation and metric pipeline only;
+1. **one development scenario** — smoke-test implementation and metric pipeline only;
 2. finalize prompts, validators, ambiguity/abstention policy and failure taxonomy;
 3. independently create/review the blind gold packages;
-4. freeze S1/S2, gold hashes, QDIP runtime, metrics and numerical GO thresholds;
+4. freeze S1/S2, gold hashes, QDIP runtime, deterministic scoring rubric, aggregation formulas and numerical GO thresholds;
 5. execute **five heterogeneous blind scenarios** without tuning;
 6. apply the preregistered mechanical GO/NO-GO gate.
 
-The development scenario is exploratory and cannot support the GO verdict.
+The five blind cases form a **bounded qualification set**, not evidence of broad semantic generalization. The development scenario is exploratory and cannot support the GO verdict.
 
-A BattleVerse application may proceed only if the blind protocol simultaneously demonstrates:
+A BattleVerse application may proceed only if the bounded qualification test simultaneously demonstrates:
 
-- high critical-constraint recall;
+- critical-constraint recall at or above the frozen threshold;
 - zero executable hallucinated hard constraints;
 - controlled silent assumptions;
 - zero extraction-induced hard-constraint violations;
-- semantic non-inferiority to manual gold downstream;
-- material reduction in human structuring/review effort;
-- measurable safety/semantic advantage of S2 over naive LLM extraction S1.
+- per-scenario and aggregate downstream semantic non-inferiority to manual gold;
+- at least 30% total human structuring/review effort reduction across blind cases, with the per-case anti-regression cap;
+- measurable safety/semantic advantage of S2 over naive LLM extraction S1 under absolute preregistered deltas;
+- provenance and ambiguity-control thresholds;
+- blind-set integrity with no omitted failures or post-freeze tuning.
 
-If S2 wins only on the development scenario, or only improves JSON formatting, the result is `BATTLEVERSE_NO_GO`.
+If S2 wins only on the development scenario, only improves JSON formatting, or merely ties S1 at ceiling without measurable added value, the result is `BATTLEVERSE_NO_GO`.
 
 ## 5. Candidate experiment if GO
 
@@ -130,7 +132,7 @@ Research/engineering question:
 
 Possible six-month scope after the pre-application GO proof:
 
-1. expand the frozen semantic-intake benchmark and scenario library;
+1. expand the semantic-intake benchmark and scenario library beyond the bounded qualification set;
 2. improve ambiguity detection, clarification and provenance mechanisms without weakening QDIP formal authority;
 3. implement LLM → DecisionSpec constrained extraction/generation as a reusable front-end layer;
 4. validate against Canonical Decision IR semantics;
