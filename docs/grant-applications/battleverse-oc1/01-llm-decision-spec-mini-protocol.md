@@ -74,46 +74,76 @@ LLM extraction plus:
 
 Only S2 is the proposed BattleVerse contribution.
 
-## 4. Dataset / scenario set
+## 4. Experimental sequence
 
-Use a bounded set of mission-planning scenarios that exercise structured decision semantics without requiring classified information.
+The GO/NO-GO decision must not be based on a single scenario.
 
-The dataset must contain at least these case classes:
+### Phase D — Development smoke test
 
-- fully specified intent;
-- omitted constraint;
-- ambiguous deadline/resource statement;
-- conflicting constraints;
-- soft preference expressed as if it were mandatory;
-- implicit objective;
-- unsupported request outside current IR semantics;
-- inconsistent units/quantities;
-- multiple plausible interpretations;
-- adversarial/noisy wording.
+Use exactly **one development scenario** to verify that the S0/S1/S2 pipeline, validators, metrics and audit logging execute end-to-end.
 
-Before primary evaluation, freeze:
+The development scenario may be inspected and used to tune prompts, validator rules and implementation details.
+
+Its results are **not** admissible for the BattleVerse GO decision.
+
+### Freeze point
+
+After the development smoke test, freeze:
 
 ```text
-scenario_set_version
-scenario_count
-train/dev/test split
-scenario authorship process
-gold-annotation process
-adjudication rule
-LLM model/version
-prompt/template version
 DecisionSpec schema/version
 Canonical IR semantic version
-validator version
+S1 prompt/template
+S2 prompt/template
+ambiguity/abstention policy
+validator rules
+failure taxonomy
+LLM model/version
+LLM decoding configuration
 QDIP runtime commit
-random seeds / temperature / decoding config
+solver configuration
+blind-scenario set identifiers/checksums
+gold-package checksums
+metric definitions
+GO/NO-GO thresholds
+epsilon_semantic
+human-effort threshold
+statistical procedure
 ```
 
-Primary test scenarios must be held out from prompt/policy tuning.
+No tuning against blind-scenario outputs is allowed after this point.
 
-## 5. Gold annotation
+### Phase B — Blind confirmatory test
 
-For each scenario, the gold package contains:
+Run **five heterogeneous blind scenarios** that were not used for prompt, validator or policy tuning.
+
+The five scenarios should span materially different decision structures while remaining unclassified and bounded, for example:
+
+1. constrained logistics/resource allocation;
+2. time-critical readiness/recovery planning;
+3. multi-objective route/resource planning under uncertainty;
+4. competing mission-priority/resource-allocation problem;
+5. degraded-information planning requiring explicit clarification/abstention.
+
+The scenario set must exercise different combinations of hard constraints, soft preferences, uncertainty, temporal semantics and ambiguity. A positive result on the development scenario cannot compensate for failure on the blind set.
+
+## 5. Gold annotation and freeze procedure
+
+Gold `DecisionSpec` packages must be created independently of S1/S2 outputs.
+
+For every blind scenario:
+
+1. **Author A** prepares the scenario text and hidden semantic intent sheet.
+2. **Annotator B**, who did not implement S1/S2, independently produces the candidate gold `DecisionSpec` from the scenario text.
+3. **Reviewer C** independently reviews the candidate gold against the scenario text and the frozen DecisionSpec semantics.
+4. Disagreements are resolved through documented adjudication before any S1/S2 blind run.
+5. The final gold package is canonicalized and hashed.
+6. Gold hashes are frozen before S1/S2 execution.
+7. S1/S2 outputs may not be used to modify the gold package.
+
+If independent personnel are unavailable, roles may be performed at different times by the same person only if the limitation is disclosed; this is weaker evidence and must be reported explicitly.
+
+For each scenario, the frozen gold package contains:
 
 - canonical manual `DecisionSpec`;
 - accepted alternative interpretations where genuinely ambiguous;
@@ -124,11 +154,27 @@ For each scenario, the gold package contains:
 - required clarification points;
 - unsupported/missing information markers;
 - expected abstention/clarification behavior;
-- provenance links to source text spans.
+- provenance links to source text spans;
+- downstream evaluation world/reference.
 
-Where two qualified annotators disagree, use documented adjudication rather than silently selecting one interpretation.
+## 6. Dataset / scenario requirements
 
-## 6. Primary semantic metrics
+Across the development and blind scenarios, cover at least these case classes:
+
+- fully specified intent;
+- omitted constraint;
+- ambiguous deadline/resource statement;
+- conflicting constraints;
+- soft preference expressed as if mandatory;
+- implicit objective;
+- unsupported request outside current IR semantics;
+- inconsistent units/quantities;
+- multiple plausible interpretations;
+- adversarial/noisy wording.
+
+Primary blind scenarios must be held out from prompt/policy tuning.
+
+## 7. Primary semantic metrics
 
 ### M1 — Field-level extraction correctness
 
@@ -156,7 +202,7 @@ ConstraintRecall = correctly_preserved_gold_constraints / all_gold_constraints
 
 Also report false hard constraints introduced by the model.
 
-Critical omissions and hallucinated hard constraints must be counted separately because they have asymmetric operational risk.
+Critical omissions and hallucinated hard constraints are counted separately because they have asymmetric operational risk.
 
 ### M3 — Ambiguity / clarification performance
 
@@ -186,9 +232,9 @@ For extracted claims/constraints requiring source support, measure whether cited
 
 This is used to detect unsupported hallucinated semantics.
 
-## 7. Downstream QDIP metrics
+## 8. Downstream QDIP metrics
 
-### M6 — Infeasible-plan rate
+### M6 — Extraction-induced infeasible-plan rate
 
 Execute validated specs through the same QDIP runtime and frozen solver configuration.
 
@@ -213,12 +259,16 @@ For each scenario, compare QDIP output from S2 against QDIP output from manual g
 Primary downstream hypothesis:
 
 ```text
-NR_LLM-Spec <= NR_Manual-Spec + epsilon_semantic
+NR_S2 <= NR_S0 + epsilon_semantic
 ```
 
-where `epsilon_semantic` is pre-registered before the primary test.
+Frozen GO threshold:
 
-If utility/regret is not meaningful for a scenario, use a pre-registered task-specific decision-distance/constraint-outcome metric; do not choose it after seeing results.
+```text
+epsilon_semantic = 0.05
+```
+
+This is a reference-normalized non-inferiority margin and must not be changed after blind results are observed.
 
 This test evaluates semantic preservation through the LLM intake layer, not optimizer superiority.
 
@@ -228,7 +278,7 @@ Report downstream hard-constraint violations caused by semantic extraction error
 
 A system may not trade hard-constraint violations for higher utility.
 
-## 8. Human-effort metric
+## 9. Human-effort metric
 
 Measure actual operator/analyst effort for:
 
@@ -238,7 +288,7 @@ Measure actual operator/analyst effort for:
 
 Record person-minutes and correction operations.
 
-Define before freeze:
+Define:
 
 ```text
 E_manual
@@ -246,15 +296,17 @@ E_naive_review
 E_semantic_review
 ```
 
-Candidate product hypothesis:
+Frozen materiality threshold for BattleVerse GO:
 
 ```text
-E_semantic_review < E_manual
+E_semantic_review <= 0.70 * E_manual
 ```
 
-Any stronger reduction threshold must be justified and pre-registered before the primary run.
+That is, S2 must reduce median human structuring/review effort by at least **30%** on the blind scenarios.
 
-## 9. Failure taxonomy
+Report S1 effort as an ablation; S2 should also outperform S1 on correction effort unless S1 already meets the manual-reduction threshold without violating semantic/safety gates.
+
+## 10. Failure taxonomy
 
 Every failed case must be assigned one or more categories:
 
@@ -276,7 +328,7 @@ Every failed case must be assigned one or more categories:
 
 Do not discard failed cases from the primary denominator.
 
-## 10. Ablation requirement
+## 11. Ablation requirement
 
 The BattleVerse research claim is not supported unless S2 is compared against S1.
 
@@ -292,66 +344,156 @@ S2 LLM + ambiguity/provenance/validation pipeline
 
 This isolates the value of the proposed semantic-intake mechanisms from the generic capability of an LLM to emit JSON.
 
-## 11. Statistical design
+S2 must show a measurable improvement over S1 on the safety/semantic metrics. Better formatting alone does not count.
 
-Before primary execution pre-register:
+## 12. Pre-registered numeric GO / NO-GO gate
 
-- sample size;
-- scenario stratification;
-- primary metric(s);
-- confidence intervals;
-- paired test/interval method;
-- `epsilon_semantic`;
-- treatment of abstentions;
-- treatment of invalid specs;
-- repeated-run policy for stochastic LLM output;
-- multiplicity handling if several primary hypotheses are retained.
+BattleVerse receives **GO** only if all of the following hold on the five blind scenarios.
 
-Do not use "no significant difference" as proof of non-inferiority.
+### G1 — Critical constraint recall
 
-## 12. GO / NO-GO gate for BattleVerse
+```text
+CriticalConstraintRecall_S2 >= 0.95
+```
 
-### GO
+and S2 must exceed S1 on critical-constraint recall.
 
-Proceed to full BattleVerse application only if the mini-protocol is technically credible and the proposed work contains a falsifiable contribution beyond parsing:
+### G2 — Hallucinated hard constraints
 
-- ambiguity/clarification mechanism;
-- constraint/objective semantic extraction;
-- deterministic validation;
-- provenance/audit;
-- downstream decision-impact measurement;
-- manual baseline and naive-LLM ablation;
-- bounded defence mission-planning demonstrator feasible within six months.
+```text
+HallucinatedHardConstraints_S2 = 0
+```
 
-Empirical pilot results are desirable but are not required to claim completed research before the grant. Any unexecuted hypothesis must be presented as proposed work, not existing evidence.
+Any unsupported hard constraint entering the validated executable spec is a gate failure.
 
-### NO-GO
+### G3 — Silent assumptions
 
-Stop BattleVerse-specific work if:
+```text
+SilentAssumptionRate_S2 <= 0.05
+```
 
+and S2 must have a lower silent-assumption rate than S1.
+
+### G4 — Downstream hard-constraint violations
+
+```text
+HardConstraintViolations_S2 = 0
+```
+
+Any downstream hard-constraint violation attributable to semantic extraction is an automatic NO-GO.
+
+### G5 — Semantic non-inferiority
+
+```text
+NR_S2 <= NR_S0 + 0.05
+```
+
+Use a pre-registered paired interval/non-inferiority procedure across blind scenarios/evaluation worlds. "No significant difference" is not sufficient.
+
+### G6 — Human effort reduction
+
+```text
+median(E_semantic_review) <= 0.70 * median(E_manual)
+```
+
+The reduction must be achieved without violating G1–G5.
+
+### G7 — S2 research contribution over naive LLM
+
+S2 must outperform S1 on at least **three of these four** paired safety/semantic dimensions, with no material regression on the fourth:
+
+1. critical-constraint recall;
+2. hallucinated hard constraints;
+3. silent-assumption rate;
+4. semantic-validity rate.
+
+A difference limited to JSON/schema formatting does not qualify.
+
+### G8 — Blind-set consistency
+
+All safety-critical gates G2 and G4 must pass **on every individual blind scenario**. Aggregate success cannot hide a catastrophic single-scenario failure.
+
+G1, G3, G5 and G6 are evaluated on the frozen aggregate procedure, with per-scenario values also reported.
+
+## 13. Automatic NO-GO conditions
+
+BattleVerse-specific application work stops if any of the following occurs:
+
+- S2 wins only on the development scenario but fails the blind gate;
+- the gold package is changed after inspecting S1/S2 blind outputs;
 - LLM is only a text-to-JSON/parser wrapper;
-- no meaningful ambiguity/validation research remains;
-- no bounded mission-planning scenario can be defined without classified data;
+- S2 does not materially outperform S1 on semantic/safety behavior;
+- a hallucinated hard constraint survives validation;
+- an extraction-induced hard-constraint violation occurs downstream;
+- downstream semantic non-inferiority fails;
+- human correction effort is not reduced by the frozen materiality threshold;
+- no bounded mission-planning scenarios can be defined without classified data;
 - the experiment requires replacing QDIP formal authority with free-form LLM reasoning;
 - the work forces new defence-specific semantics into QDIP Core solely to fit the call;
 - downstream quality/constraint impact cannot be evaluated reproducibly.
 
-## 13. Required evidence artifacts
+## 14. Statistical design
 
-If GO, the BattleVerse application package should reference or plan to produce:
+Before blind execution freeze:
 
-- frozen scenario set and gold annotations;
+- five blind scenario identifiers/checksums;
+- scenario stratification;
+- per-scenario evaluation-world count;
+- confidence intervals;
+- paired test/interval method;
+- treatment of abstentions;
+- treatment of invalid specs;
+- repeated-run policy for stochastic LLM output;
+- multiplicity handling if multiple statistical hypotheses are retained.
+
+Because five semantic scenarios alone provide limited statistical power, downstream non-inferiority should use multiple frozen evaluation worlds per scenario where the decision problem permits it. The semantic safety gates remain scenario-level and deterministic where possible.
+
+Do not use "no significant difference" as proof of non-inferiority.
+
+## 15. GO / NO-GO decision procedure
+
+### Step 1 — Development
+
+Run the single development scenario, debug the pipeline and finalize the protocol.
+
+### Step 2 — Freeze
+
+Freeze S1/S2, validators, blind scenarios, gold hashes, QDIP runtime, metrics and all thresholds.
+
+### Step 3 — Blind execution
+
+Execute S1 and S2 on the five blind scenarios without tuning.
+
+### Step 4 — Mechanical verdict
+
+Evaluate G1–G8 exactly as frozen.
+
+```text
+ALL G1..G8 PASS  → BATTLEVERSE_GO
+ANY mandatory gate fails → BATTLEVERSE_NO_GO
+```
+
+No qualitative override is allowed after viewing the blind results.
+
+## 16. Required evidence artifacts
+
+If GO, the BattleVerse application package should reference:
+
+- development scenario marked exploratory;
+- frozen blind scenario set/checksums;
+- independently created and reviewed gold packages/checksums;
 - LLM extraction prompt/policy version;
 - ambiguity/abstention specification;
 - DecisionSpec validator rules;
 - failure taxonomy report;
-- S0/S1/S2 benchmark results;
+- S0/S1/S2 blind benchmark results;
 - downstream QDIP decision-quality comparison;
 - human-effort comparison;
+- GO/NO-GO gate report;
 - audit/reproducibility manifest;
 - demonstrator architecture and six-month work plan.
 
-## 14. Relationship to canonical QDIP thesis
+## 17. Relationship to canonical QDIP thesis
 
 This experiment does not modify the Universal Runtime thesis.
 
