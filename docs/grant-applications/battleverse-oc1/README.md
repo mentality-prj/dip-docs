@@ -89,9 +89,10 @@ The formal qualification stack is defined in:
 
 - [01 — LLM → DecisionSpec Bounded Qualification Protocol](01-llm-decision-spec-mini-protocol.md)
 - [02 — Scorer Verification and Formal Freeze Procedure](02-scorer-freeze-verification.md)
+- [03 — BattleVerse Development Qualification Implementation](03-development-qualification-implementation.md)
 - [`battleverse-preregistration.schema.json`](battleverse-preregistration.schema.json)
 
-The first document freezes what is measured and the G1–G9 verdict logic. The second verifies that the scorer/aggregation implementation matches that protocol. The schema constrains the immutable preregistration artifact used at formal freeze.
+The first document freezes what is measured and the G1–G9 verdict logic. The second verifies that scorer/aggregation implementation matches that protocol. The third is the bounded implementation task that ends at formal freeze. The schema constrains the immutable preregistration artifact used at that freeze.
 
 A plain text-to-JSON implementation is explicitly insufficient.
 
@@ -105,7 +106,7 @@ Required sequence:
 2. implement S0/S1/S2 and finalize prompts, validators, ambiguity/abstention policy and failure taxonomy;
 3. implement scorer/aggregation code and pass synthetic fixtures with manually specified expected scores;
 4. execute end-to-end pipeline dry-run;
-5. independently create/review the blind gold packages;
+5. independently create/review the blind gold packages without exposing their semantic content to S1/S2 implementation;
 6. create `battleverse-preregistration.json` containing all thresholds/configuration/checksums;
 7. canonicalize it, write `battleverse-preregistration.sha256`, and freeze commit/ref;
 8. execute **five heterogeneous blind scenarios** without tuning;
