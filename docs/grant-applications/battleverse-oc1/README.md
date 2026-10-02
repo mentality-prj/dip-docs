@@ -85,6 +85,12 @@ This is technically coherent with QDIP because the LLM handles unstructured sema
 
 No application should be written beyond fit analysis until this GO/NO-GO is resolved.
 
+The formal fit/research test is defined in:
+
+- [01 — LLM → DecisionSpec Research Mini-Protocol](01-llm-decision-spec-mini-protocol.md)
+
+The protocol requires ambiguity handling, constraint/objective extraction, controlled abstention, provenance, deterministic validation, failure-mode analysis, manual-gold comparison, naive-LLM ablation and downstream QDIP decision-impact measurement. A plain text-to-JSON implementation is explicitly insufficient.
+
 ## 4. Candidate experiment if GO
 
 Working concept:
@@ -137,6 +143,8 @@ Before submission:
 10. complete mandatory declarations/ownership-control documentation;
 11. produce official-template proposal in English;
 12. perform evaluator-style red-team review before submission.
+
+Budget work starts only after the official Guide for Applicants confirms the funding-rate and eligible-cost assumptions.
 
 ## 7. Decision deadline
 
