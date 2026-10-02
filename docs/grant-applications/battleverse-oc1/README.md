@@ -83,7 +83,7 @@ This is technically coherent with QDIP because the LLM handles unstructured sema
 - achieving fit requires changing the frozen Universal Runtime thesis;
 - there is no genuine defence mission-planning scenario available for validation.
 
-No application should be written beyond fit analysis until this GO/NO-GO is resolved.
+No application should be written beyond fit analysis until the formal GO/NO-GO protocol passes.
 
 The formal fit/research test is defined in:
 
@@ -91,7 +91,34 @@ The formal fit/research test is defined in:
 
 The protocol requires ambiguity handling, constraint/objective extraction, controlled abstention, provenance, deterministic validation, failure-mode analysis, manual-gold comparison, naive-LLM ablation and downstream QDIP decision-impact measurement. A plain text-to-JSON implementation is explicitly insufficient.
 
-## 4. Candidate experiment if GO
+## 4. GO proof sequence
+
+The BattleVerse GO decision cannot be based on one hand-picked mission scenario.
+
+Required sequence:
+
+1. **one development scenario** — smoke-test the implementation and metric pipeline only;
+2. finalize prompts, validators, ambiguity/abstention policy and failure taxonomy;
+3. independently create/review the blind gold packages;
+4. freeze S1/S2, gold hashes, QDIP runtime, metrics and numerical GO thresholds;
+5. execute **five heterogeneous blind scenarios** without tuning;
+6. apply the preregistered mechanical GO/NO-GO gate.
+
+The development scenario is exploratory and cannot support the GO verdict.
+
+A BattleVerse application may proceed only if the blind protocol simultaneously demonstrates:
+
+- high critical-constraint recall;
+- zero executable hallucinated hard constraints;
+- controlled silent assumptions;
+- zero extraction-induced hard-constraint violations;
+- semantic non-inferiority to manual gold downstream;
+- material reduction in human structuring/review effort;
+- measurable safety/semantic advantage of S2 over naive LLM extraction S1.
+
+If S2 wins only on the development scenario, or only improves JSON formatting, the result is `BATTLEVERSE_NO_GO`.
+
+## 5. Candidate experiment if GO
 
 Working concept:
 
@@ -101,19 +128,20 @@ Research/engineering question:
 
 > Can an LLM-supported interface convert ambiguous mission-planning intent and scenario information into formally validated decision problems, while QDIP provides symbolic constraint enforcement, planning under uncertainty, risk/utility evaluation and auditable Courses of Action?
 
-Possible six-month scope:
+Possible six-month scope after the pre-application GO proof:
 
-1. define one bounded defence mission-planning decision scenario;
-2. implement LLM → DecisionSpec constrained extraction/generation;
-3. validate against Canonical Decision IR semantics;
-4. generate/optimize feasible Courses of Action under uncertainty;
-5. implement human-in-the-loop correction/rejection;
-6. benchmark malformed/ambiguous input handling, constraint preservation and decision quality;
-7. deliver demonstrator and reproducibility/evidence package.
+1. expand the frozen semantic-intake benchmark and scenario library;
+2. improve ambiguity detection, clarification and provenance mechanisms without weakening QDIP formal authority;
+3. implement LLM → DecisionSpec constrained extraction/generation as a reusable front-end layer;
+4. validate against Canonical Decision IR semantics;
+5. generate/optimize feasible Courses of Action under uncertainty;
+6. implement human-in-the-loop correction/rejection;
+7. benchmark malformed/ambiguous input handling, constraint preservation, decision quality and operator effort;
+8. deliver demonstrator and reproducibility/evidence package.
 
 This must remain an application-specific experiment over the QDIP runtime, not a defence fork of QDIP Core.
 
-## 5. Canonical evidence mapping
+## 6. Canonical evidence mapping
 
 | BattleVerse need | QDIP source |
 |---|---|
@@ -127,13 +155,13 @@ This must remain an application-specific experiment over the QDIP runtime, not a
 
 BattleVerse-specific LLM/defence experiment claims belong only in this overlay and must not contaminate generic QDIP claims.
 
-## 6. Application work if GO
+## 7. Application work if GO
 
 Before submission:
 
 1. archive official Guide for Applicants and template;
 2. verify funding rate, eligible costs, ownership-control requirements and applicant legal eligibility;
-3. select exact Topic 1 interpretation and defence scenario;
+3. select exact Topic 1 interpretation and defence scenario family;
 4. specify LLM role and model/provider constraints;
 5. define current TRL and credible end-of-experiment TRL target;
 6. produce six-month WP/milestone/deliverable plan;
@@ -146,7 +174,7 @@ Before submission:
 
 Budget work starts only after the official Guide for Applicants confirms the funding-rate and eligible-cost assumptions.
 
-## 7. Decision deadline
+## 8. Decision deadline
 
 Resolve the QDIP ↔ Topic 1 fit immediately, well before the 16 November 2026 submission deadline.
 
