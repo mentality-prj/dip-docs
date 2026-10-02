@@ -85,11 +85,15 @@ This is technically coherent with QDIP because the LLM handles unstructured sema
 
 No application should be written beyond fit analysis until the formal GO/NO-GO protocol passes.
 
-The formal test is defined in:
+The formal qualification stack is defined in:
 
 - [01 — LLM → DecisionSpec Bounded Qualification Protocol](01-llm-decision-spec-mini-protocol.md)
+- [02 — Scorer Verification and Formal Freeze Procedure](02-scorer-freeze-verification.md)
+- [`battleverse-preregistration.schema.json`](battleverse-preregistration.schema.json)
 
-It requires ambiguity handling, constraint/objective extraction, controlled abstention, provenance, deterministic validation, failure-mode analysis, manual-gold comparison, naive-LLM ablation, downstream QDIP decision-impact measurement and human-effort reduction. A plain text-to-JSON implementation is explicitly insufficient.
+The first document freezes what is measured and the G1–G9 verdict logic. The second verifies that the scorer/aggregation implementation matches that protocol. The schema constrains the immutable preregistration artifact used at formal freeze.
+
+A plain text-to-JSON implementation is explicitly insufficient.
 
 ## 4. GO proof sequence
 
@@ -98,11 +102,14 @@ The BattleVerse GO decision cannot be based on one hand-picked mission scenario.
 Required sequence:
 
 1. **one development scenario** — smoke-test implementation and metric pipeline only;
-2. finalize prompts, validators, ambiguity/abstention policy and failure taxonomy;
-3. independently create/review the blind gold packages;
-4. freeze S1/S2, gold hashes, QDIP runtime, deterministic scoring rubric, aggregation formulas and numerical GO thresholds;
-5. execute **five heterogeneous blind scenarios** without tuning;
-6. apply the preregistered mechanical GO/NO-GO gate.
+2. implement S0/S1/S2 and finalize prompts, validators, ambiguity/abstention policy and failure taxonomy;
+3. implement scorer/aggregation code and pass synthetic fixtures with manually specified expected scores;
+4. execute end-to-end pipeline dry-run;
+5. independently create/review the blind gold packages;
+6. create `battleverse-preregistration.json` containing all thresholds/configuration/checksums;
+7. canonicalize it, write `battleverse-preregistration.sha256`, and freeze commit/ref;
+8. execute **five heterogeneous blind scenarios** without tuning;
+9. apply the preregistered mechanical G1–G9 verdict.
 
 The five blind cases form a **bounded qualification set**, not evidence of broad semantic generalization. The development scenario is exploratory and cannot support the GO verdict.
 
@@ -116,11 +123,21 @@ A BattleVerse application may proceed only if the bounded qualification test sim
 - at least 30% total human structuring/review effort reduction across blind cases, with the per-case anti-regression cap;
 - measurable safety/semantic advantage of S2 over naive LLM extraction S1 under absolute preregistered deltas;
 - provenance and ambiguity-control thresholds;
-- blind-set integrity with no omitted failures or post-freeze tuning.
+- blind-set integrity with no omitted failures or post-freeze tuning;
+- scorer synthetic fixture suite passes 100% before formal freeze;
+- preregistration hash verifies before blind execution.
 
-If S2 wins only on the development scenario, only improves JSON formatting, or merely ties S1 at ceiling without measurable added value, the result is `BATTLEVERSE_NO_GO`.
+If S2 wins only on the development scenario, only improves JSON formatting, merely ties S1 at ceiling without measurable added value, or the scorer/preregistration integrity checks fail, the result cannot be `BATTLEVERSE_GO`.
 
-## 5. Candidate experiment if GO
+## 5. Post-freeze rule
+
+The frozen preregistration is immutable.
+
+If an implementation defect is found **before blind execution and before any blind result is inspected**, the frozen version is retained in history as `SUPERSEDED_BEFORE_EXECUTION`; a new version is created, re-tested and re-frozen.
+
+If a defect capable of affecting scoring/verdict is discovered **after blind execution starts or results are visible**, the original run is preserved and marked invalid for primary qualification evidence. A new primary verdict requires a complete run under a new versioned preregistration. No selective rescoring, threshold repair or rewriting of the original freeze is allowed.
+
+## 6. Candidate experiment if GO
 
 Working concept:
 
@@ -143,7 +160,7 @@ Possible six-month scope after the pre-application GO proof:
 
 This must remain an application-specific experiment over the QDIP runtime, not a defence fork of QDIP Core.
 
-## 6. Canonical evidence mapping
+## 7. Canonical evidence mapping
 
 | BattleVerse need | QDIP source |
 |---|---|
@@ -157,7 +174,7 @@ This must remain an application-specific experiment over the QDIP runtime, not a
 
 BattleVerse-specific LLM/defence experiment claims belong only in this overlay and must not contaminate generic QDIP claims.
 
-## 7. Application work if GO
+## 8. Application work if GO
 
 Before submission:
 
@@ -176,7 +193,7 @@ Before submission:
 
 Budget work starts only after the official Guide for Applicants confirms the funding-rate and eligible-cost assumptions.
 
-## 8. Decision deadline
+## 9. Decision deadline
 
 Resolve the QDIP ↔ Topic 1 fit immediately, well before the 16 November 2026 submission deadline.
 
