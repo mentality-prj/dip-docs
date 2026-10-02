@@ -3,6 +3,8 @@
 Status checked: 2026-10-02
 Program owner: Ukrainian Startup Fund (USF)
 Canonical technical evidence: `../../grant-evidence-pack/`
+Priority: P1 — primary generic target
+Target readiness before next call opens: 80–90%
 
 ## 1. Why this folder exists
 
@@ -16,11 +18,11 @@ Official USF program page currently states:
 
 - target: early-stage Ukrainian startups;
 - focus sectors: Deep Tech, Green Tech, EdTech;
-- Deep Tech explicitly includes AI and machine learning among other advanced technologies;
+- Deep Tech explicitly includes artificial intelligence and machine learning;
 - pre-seed support: up to EUR 20,000;
 - seed support: up to EUR 40,000;
 - application process: compliance → expert evaluation → pitching/Selection Committee → Supervisory Board approval → grant agreement;
-- next open call: announced by USF as coming soon / notification registration available.
+- next open call: officially announced as coming soon / notification registration available.
 
 Official source:
 
@@ -44,6 +46,8 @@ Do not position QDIP as:
 - a new mathematical solver;
 - an unvalidated claim of universal AI superiority.
 
+Unlike BattleVerse, Startup EDGE does not require a defence- or LLM-specific product reframing. This is therefore the primary generic application target.
+
 ## 4. Evidence mapping
 
 | Startup EDGE need | Canonical source |
@@ -59,24 +63,54 @@ Do not position QDIP as:
 | market/exploitation | Evidence Pack `15` |
 | Ukrainian impact | Evidence Pack `16` |
 
-## 5. Application-specific work required
+## 5. Work to reach 80–90% readiness before call opening
 
-Before the next call opens, prepare:
+Prepare all content that does not depend on the final next-call rules:
 
-1. verified next-call eligibility checklist from the official rules;
-2. applicant legal-entity fit and stage classification (pre-seed vs seed);
-3. exact use of funds for EUR 20k / EUR 40k scenario;
-4. 1-page application-facing product narrative;
-5. market/customer/problem statement;
-6. traction/prototype/evidence summary;
-7. founder/team section;
-8. 3–5 minute pitch and pitch deck;
-9. requested milestones achievable within grant amount;
-10. compliance/submission checklist.
+1. applicant profile and legal-entity assumptions;
+2. pre-seed vs seed decision framework;
+3. EUR 20k and EUR 40k use-of-funds scenarios;
+4. milestone plan for both funding scenarios;
+5. 1-page product/innovation narrative;
+6. customer/problem statement and target segments;
+7. market and competitive positioning;
+8. traction/prototype/evidence summary;
+9. founder/team narrative;
+10. Ukrainian impact narrative;
+11. commercialization/business-model summary;
+12. pitch deck structure;
+13. 3–5 minute pitch script draft;
+14. application-answer bank for likely questions;
+15. evidence/reference index linking every quantitative/technical claim to the Canonical Evidence Pack;
+16. compliance checklist template with call-dependent fields marked TBD.
 
-## 6. Recommended Startup EDGE scope
+Do not freeze eligibility, eligible-cost rules, project duration, state-aid treatment or co-financing assumptions until the next official call documents are published.
 
-Startup EDGE funding is too small for the full A+B+C research program. Use it for a bounded milestone that materially advances the Universal Runtime thesis, for example:
+## 6. Application-answer bank
+
+Maintain reusable draft answers for at least:
+
+- What problem does QDIP solve?
+- Why is the problem economically important?
+- What is technically innovative?
+- Why is this DeepTech rather than ordinary software integration?
+- What is the current TRL/stage?
+- What evidence already exists?
+- What remains technically uncertain?
+- What will the grant fund?
+- What measurable milestones will be reached?
+- Who is the target customer?
+- What is the business model?
+- Why can the team execute?
+- What is the Ukrainian impact?
+- What differentiates QDIP from BI, ERP, optimization frameworks and bespoke optimization projects?
+- What happens after the grant?
+
+Answers must be concise application-facing adaptations of canonical evidence, not independent sources of truth.
+
+## 7. Recommended Startup EDGE scope
+
+Startup EDGE funding is too small for the full A+B+C research program. Use it for a bounded milestone that materially advances the Universal Runtime thesis.
 
 ### Pre-seed EUR 20k candidate scope
 
@@ -96,13 +130,14 @@ Startup EDGE funding is too small for the full A+B+C research program. Use it fo
 
 Exact scope must be aligned with the next-call eligible-cost rules before submission.
 
-## 7. Open eligibility items
+## 8. Open eligibility items
 
 Do not assume eligibility from the first cohort or third-party summaries. Re-check when the next official call rules are published:
 
 - permitted applicant legal form/jurisdiction;
 - Ukrainian operations/employment requirements;
 - incorporation-date restrictions;
+- stage/revenue/investment restrictions;
 - prior funding/state-aid caps;
 - exclusions and conflict-of-interest rules;
 - eligible/ineligible costs;
@@ -111,7 +146,7 @@ Do not assume eligibility from the first cohort or third-party summaries. Re-che
 - dual-use/defence restrictions, if any;
 - required co-financing, if any.
 
-## 8. Submission gate
+## 9. Submission gate
 
 Startup EDGE application is ready only when:
 
@@ -121,4 +156,5 @@ Startup EDGE application is ready only when:
 - application claims map to canonical evidence;
 - no unverified Test A/B/C result is written as established fact;
 - budget maps directly to grant milestones;
-- pitch narrative is consistent with the written application.
+- pitch narrative is consistent with the written application;
+- final application answers are reconciled with the current Canonical Evidence Pack.
