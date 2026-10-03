@@ -25,15 +25,17 @@ Do not spend proposal effort unless all mandatory conditions pass:
 
 Always continue independently of a call. Current pack contains 01–19, with Test A result still pending primary execution and Test B/Test C protocols requiring freeze before use.
 
-### P0 APPLY-NOW — EIC Pathfinder Challenges 2026 / DeepRAP
+### P0 WATCH — PARP Startup Booster Poland / DeepTech Goes Dual
 
-Official EIC status: **OPEN**, deadline **2026-10-28 17:00 Brussels local time**. Pathfinder Challenges allow a single-applicant route and fund up to EUR 4m at 100% of eligible costs.
+PARP has completed the operator application window and is evaluating accelerator proposals. The programme is structurally close to QDIP: it funds deep-tech startups from technology development toward commercialisation. Dual-use is a portfolio priority, not a requirement for every startup: current operator rules require at least 30% of participants to be dual-use.
 
-QDIP fit: high at the thematic level because DeepRAP targets deep reasoning, abstraction, planning and trustworthy cognitive AI. Stage fit is conditional: Pathfinder is early-stage high-risk research, so QDIP should apply only with a genuine low-TRL breakthrough research hypothesis, not ordinary product development or commercialization.
+Published startup support ceilings are up to PLN 450k grant in Stage I plus up to PLN 450k grant in Stage II, capped at EUR 200k equivalent total grant per startup. Stage I must advance technology by at least two TRL levels to at least TRL6; Stage II prepares successful startups for market entry/commercialisation.
+
+Do not treat this as APPLY-NOW until selected accelerators publish startup rounds and their startup agreements are checked for applicant form, cash-flow, IP, de minimis and own-contribution terms.
 
 Official sources:
-- https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en
-- https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder/eic-pathfinder-challenges-2026_en
+- https://www.parp.gov.pl/component/grants/grants/startup-booster-poland-deeptech-goes-dual
+- https://www.parp.gov.pl/component/qnadb/kategoria/na-start/startup-booster-poland-deeptech-goes-dual
 
 ### P1 READY-WHEN-OPEN — Startup EDGE
 
@@ -61,26 +63,31 @@ QDIP fit: plausible if the economic-impact case is accepted naturally. Revalidat
 
 Official source: https://www.parp.gov.pl/component/qnadb/kategoria/startup-booster-poland-tech-impact
 
+## Open but conditional
+
+- **PARP StartupsExchange by StartSmart CEE** — current round is open through 2026-10-30 and covers up to 100% of eligible costs. However, only up to PLN 20k is a direct cash grant and up to PLN 80k is accelerator services; it also requires a Polish startup and is primarily an internationalisation programme. It is not an exact-fit QDIP R&D target under the current strategy.
+
 ## Discovery only
 
 - **EIT AI Growth Studio** — do not allocate proposal work until an official call page and binding financing terms are located and verified. Earlier secondary references are insufficient.
 
 ## Explicitly dropped
 
+- **EIC Pathfinder Challenges 2026 / DeepRAP** — financing mechanics pass, but the scientific scope does not. A competitive proposal would require QDIP to adopt a new low-TRL cognitive-AI reasoning/planning thesis instead of executing the frozen Universal Runtime thesis. That is grant-driven R&D and fails the Economic Value Gate.
 - **EIT AI Entrepreneurs Lab** — bootcamp/pitch-prize model; not project financing for QDIP.
 - **Власна справа 2.0** — fails the current economic-return gate because its fiscal/employment obligations make it unsuitable for the financing strategy even though it is formally a grant.
-- **BattleVerse OC1** — requires an additional LLM/defence-specific experiment outside the current QDIP execution priority. No further BattleVerse proposal, qualification or LLM integration work.
-- **NOSTRADAMUS OC1** — requires an open-source funded application and an eligible incorporated business entity. We will not spend engineering effort designing how to separate or conceal QDIP IP to satisfy an open-source grant condition.
+- **BattleVerse OC1** — requires an additional LLM/defence-specific experiment outside the current QDIP execution priority.
+- **NOSTRADAMUS OC1** — requires an open-source funded application and an eligible incorporated business entity; conflicts with current QDIP IP/product-focus gate.
 
 ## Watch / rejected under current gate
 
-- **I3FLOAT OC1** — solo/100% funding is attractive, but scope is floating offshore wind TRL 6–8; no natural QDIP application is currently evidenced.
+- **I3FLOAT OC1** — solo/100% funding is attractive, but scope is floating offshore wind TRL 6–8; no natural QDIP wedge.
 - **FIERCE OC2** — 100% voucher, but requires downstream space-data/green transformation; no current QDIP wedge.
 - **NLnet Restack** — AI-related projects are generally out of scope and funded outputs are FOSS; not a current QDIP target.
 - **RENEW BOOSTER OC2** — private co-financing required.
 - **Water4All / many joint calls** — mandatory multi-country consortium.
 - **Brave1 International NATO** — current call requires an eligible NATO-country partner and is focused on counter-UAS.
-- **EIC Pathfinder Open** — consortium required; this does **not** apply to Pathfinder Challenges, where single applicants are allowed.
+- **EIC Pathfinder Open** — consortium required.
 - **Eurostars** — consortium required.
 - **PARP Ścieżka SMART / EIC Accelerator / EIC Pre-Accelerator** — beneficiary contribution and/or financing structure fails the current no-own-co-financing gate.
 
