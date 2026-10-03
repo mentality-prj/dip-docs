@@ -13,7 +13,9 @@ Do not spend proposal effort unless all mandatory conditions pass:
 - no mandatory own-cash co-financing;
 - funding is non-repayable/FSTP/grant/prize and cash-flow is executable;
 - technical scope fits QDIP without changing the Universal Runtime thesis;
-- applicant legal entity can satisfy the call.
+- applicant legal entity can satisfy the call;
+- IP/security obligations are acceptable;
+- the call does **not** require us to open-source QDIP Core, Canonical Decision IR, runtime, or engineer an artificial public/private split merely to protect QDIP IP.
 
 ## Current queue
 
@@ -31,19 +33,10 @@ Overlay: `startup-edge/`.
 
 Official source: https://usf.com.ua/programs/startup-edge
 
-### P1 OPEN-CONDITIONAL — NOSTRADAMUS Open Call #1
-
-Open now; deadline **2 December 2026, 17:00 CET**. A single SME/start-up/small mid-cap business entity may apply. Up to EUR 50k/project; requested contribution must represent 100% of project costs. The open call funds open-source farm decision applications and Topic 5 explicitly covers integrated cross-domain decision-support applications combining at least two agriculture topics.
-
-QDIP fit: credible only as a grant-specific agriculture adapter/application over unchanged Core. GO requires acceptable open-source/IP terms, eligible applicant entity, starting TRL eligibility and a defensible agriculture validation plan.
-
-Overlay: `nostradamus-oc1/`.
-
-Official source: https://nostradamus-project.eu/open-call-1/
-
 ## Explicitly dropped
 
-- **BattleVerse OC1** — removed from the grant strategy. It requires an additional LLM/defence-specific experiment that is outside the current QDIP execution priority. No further BattleVerse proposal, qualification or LLM integration work should be scheduled unless this decision is explicitly revisited.
+- **BattleVerse OC1** — requires an additional LLM/defence-specific experiment outside the current QDIP execution priority. No further BattleVerse proposal, qualification or LLM integration work.
+- **NOSTRADAMUS OC1** — requires an open-source digital application and an eligible incorporated business entity. We will not spend engineering effort designing how to separate or conceal QDIP IP to satisfy an open-source grant condition. The overlay is removed and no submission work is planned.
 
 ## Watch / rejected under current gate
 
