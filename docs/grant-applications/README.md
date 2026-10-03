@@ -41,17 +41,9 @@ Overlay: `nostradamus-oc1/`.
 
 Official source: https://nostradamus-project.eu/open-call-1/
 
-### P2 OPEN-OPTIONAL / HOLD — BattleVerse Open Call 1
+## Explicitly dropped
 
-Open; deadline **16 November 2026, 17:00 CET**; solo SME/start-up allowed; up to EUR 60k per beneficiary. Topic 1 explicitly requires LLM-related strategic decision-making/planning under uncertainty.
-
-QDIP has conceptual decision-support fit, but application requires a genuine LLM/defence experiment. It is **not** part of the canonical QDIP grant path. Keep on HOLD unless we explicitly choose to pursue that defence/LLM overlay.
-
-Overlay: `battleverse-oc1/`.
-
-Official sources:
-- https://battleverse-project.eu/open-calls/
-- https://defence-industry-space.ec.europa.eu/edf-battleverse-project-launches-first-open-call-cascade-funding-2026-09-28_en
+- **BattleVerse OC1** — removed from the grant strategy. It requires an additional LLM/defence-specific experiment that is outside the current QDIP execution priority. No further BattleVerse proposal, qualification or LLM integration work should be scheduled unless this decision is explicitly revisited.
 
 ## Watch / rejected under current gate
 

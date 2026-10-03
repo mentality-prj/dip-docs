@@ -8,7 +8,12 @@ Last checked: **2026-10-03**
 |---|---|---|---:|---|---|---|---|
 | Startup EDGE | next call coming soon | TBD | EUR 20k pre-seed / EUR 40k seed | expected; revalidate next rules | revalidate next rules | High generic fit | keep 80–90% ready; submit when official next call opens |
 | NOSTRADAMUS OC1 | OPEN | 2026-12-02 17:00 CET | EUR 50k/project | Yes for SME/start-up/small mid-cap business entity | requested contribution = 100% project cost | Conditional/credible | perform legal/IP/TRL/agri GO gate; then prepare submission |
-| BattleVerse OC1 | OPEN, HOLD unless chosen | 2026-11-16 17:00 CET | EUR 60k/beneficiary | Yes | current call summary reports up to 100%; official guide controls | Conditional | pursue only if genuine defence/LLM experiment is strategically wanted |
+
+## Explicitly dropped
+
+| Program | Reason |
+|---|---|
+| BattleVerse OC1 | Requires additional LLM/defence-specific qualification and implementation work; outside current QDIP priority. Do not resume unless explicitly reconsidered. |
 
 ## Current non-targets
 
@@ -39,8 +44,6 @@ A new program enters the active register only after verifying:
 
 - Startup EDGE: https://usf.com.ua/programs/startup-edge
 - NOSTRADAMUS OC1: https://nostradamus-project.eu/open-call-1/
-- BattleVerse OC1: https://battleverse-project.eu/open-calls/
-- EC BattleVerse notice: https://defence-industry-space.ec.europa.eu/edf-battleverse-project-launches-first-open-call-cascade-funding-2026-09-28_en
 - Brave1 International NATO: https://brave1.gov.ua/news/unite-brave-nato-open-call
 
 Third-party cascade-funding indexes may be used for discovery, but official call documentation controls submission decisions.
