@@ -1,106 +1,79 @@
 # Grant Applications — Program-Specific Overlays
 
-This directory contains thin program-specific application layers built on top of the canonical evidence base in `docs/grant-evidence-pack/`.
+Status checked: **2026-10-03**
 
-## Rule
+This directory contains thin application layers on top of `docs/grant-evidence-pack/`.
 
-Do not duplicate or fork the research thesis, methodology, benchmark evidence, Canonical Decision IR specification, TRL evidence, IP position, or core technical narrative for each grant.
+## Hard gate
 
-Use:
+Do not spend proposal effort unless all mandatory conditions pass:
+
+- single applicant is permitted;
+- no mandatory consortium;
+- no mandatory own-cash co-financing;
+- funding is non-repayable/FSTP/grant/prize and cash-flow is executable;
+- technical scope fits QDIP without changing the Universal Runtime thesis;
+- applicant legal entity can satisfy the call.
+
+## Current queue
+
+### P0 — Canonical Evidence Pack
+
+Always continue independently of a call. Current pack contains 01–19, with Test A result still pending primary execution and Test B/Test C protocols requiring freeze before use.
+
+### P1 READY-WHEN-OPEN — Startup EDGE
+
+Official USF status: next call **coming soon**; notification/pre-registration is open. Deep Tech explicitly includes AI/ML. Program page advertises up to EUR 20k pre-seed and EUR 40k seed.
+
+QDIP fit: strong generic fit. No defence/LLM/agriculture distortion required.
+
+Overlay: `startup-edge/`.
+
+Official source: https://usf.com.ua/programs/startup-edge
+
+### P1 OPEN-CONDITIONAL — NOSTRADAMUS Open Call #1
+
+Open now; deadline **2 December 2026, 17:00 CET**. A single SME/start-up/small mid-cap business entity may apply. Up to EUR 50k/project; requested contribution must represent 100% of project costs. The open call funds open-source farm decision applications and Topic 5 explicitly covers integrated cross-domain decision-support applications combining at least two agriculture topics.
+
+QDIP fit: credible only as a grant-specific agriculture adapter/application over unchanged Core. GO requires acceptable open-source/IP terms, eligible applicant entity, starting TRL eligibility and a defensible agriculture validation plan.
+
+Overlay: `nostradamus-oc1/`.
+
+Official source: https://nostradamus-project.eu/open-call-1/
+
+### P2 OPEN-OPTIONAL / HOLD — BattleVerse Open Call 1
+
+Open; deadline **16 November 2026, 17:00 CET**; solo SME/start-up allowed; up to EUR 60k per beneficiary. Topic 1 explicitly requires LLM-related strategic decision-making/planning under uncertainty.
+
+QDIP has conceptual decision-support fit, but application requires a genuine LLM/defence experiment. It is **not** part of the canonical QDIP grant path. Keep on HOLD unless we explicitly choose to pursue that defence/LLM overlay.
+
+Overlay: `battleverse-oc1/`.
+
+Official sources:
+- https://battleverse-project.eu/open-calls/
+- https://defence-industry-space.ec.europa.eu/edf-battleverse-project-launches-first-open-call-cascade-funding-2026-09-28_en
+
+## Watch / rejected under current gate
+
+- **I3FLOAT OC1** — solo/100% funding is attractive, but scope is floating offshore wind TRL 6–8; no natural QDIP application is currently evidenced. Do not distort product for it.
+- **FIERCE OC2** — 100% voucher, but requires downstream space-data/green transformation; no current QDIP wedge.
+- **NLnet Restack** — 100% and solo-friendly, but AI-related projects are generally out of scope and all outputs are FOSS; not a current QDIP target.
+- **RENEW BOOSTER OC2** — requires 30–50% private co-funding depending on grant size; reject under financing gate.
+- **Water4All / many joint calls** — mandatory multi-country consortium; reject under solo gate.
+- **Brave1 International NATO** — current call requires an eligible NATO-country partner and is focused on counter-UAS; reject under solo/product-fit gate.
+- **PARP Ścieżka SMART / EIC Accelerator / EIC Pre-Accelerator** — own contribution required under relevant funding structure; inactive under current rule.
+- **EIC Pathfinder / Eurostars** — mandatory consortium; inactive.
+
+## Application architecture
 
 ```text
 Canonical Evidence Pack
         ↓
-Program-specific mapping / eligibility / narrative / budget / forms
+program eligibility + evaluator mapping
         ↓
-Submitted application
+program-specific concept / WPs / budget / forms
+        ↓
+submission package
 ```
 
-The canonical source of truth remains:
-
-- `docs/grant-evidence-pack/`
-- relevant `docs/research/`
-- relevant `docs/proposal/`
-- relevant `docs/operations/`
-
-## What belongs in each program folder
-
-Each grant/application folder may contain:
-
-1. program profile and current call status;
-2. eligibility checklist;
-3. evaluator/selection criteria mapping;
-4. QDIP-to-program fit;
-5. stage/TRL positioning;
-6. application-specific executive summary;
-7. requested budget and eligible-cost mapping;
-8. answers/forms required by that call;
-9. pitch deck/pitch script mapping;
-10. application checklist and submission evidence.
-
-## What must not be copied
-
-Do not create program-specific variants of:
-
-- the central Universal Runtime thesis;
-- Test A/B/C methodology;
-- Canonical Decision IR semantics;
-- benchmark results;
-- core IP/FTO evidence;
-- experiment manifests.
-
-If a grant requires different wording, link to the canonical evidence and write a concise program-facing adaptation rather than a second scientific source of truth.
-
-## Active priority queue
-
-### P0 — BattleVerse Open Call 1
-
-Status: open. Deadline: 16 November 2026, 17:00 CET.
-
-Proceed only if QDIP has a genuine fit to BattleVerse Topic 1 without distorting the product thesis. Topic 1 is explicitly framed around large language models supporting strategic decision-making, symbolic reasoning, game theory and planning under uncertainty.
-
-Decision rule:
-
-- GO only if an LLM layer has a necessary, technically defensible role in a defence decision-support experiment built on QDIP;
-- NO-GO if the proposal would add an artificial LLM wrapper solely to satisfy the topic wording;
-- the underlying QDIP Universal Runtime thesis must remain unchanged.
-
-Application overlay: `battleverse-oc1/`.
-
-### P0 parallel — QDIP Canonical Evidence Pack
-
-Not a grant application. Continue the evidence program independently of any call:
-
-`Test A preregistration → Test A results → Test B Procurement → blind Test C → TRL/WP/Risks/IP-FTO/Exploitation/Impact/Team/LOI`.
-
-This work must not be delayed by grant-specific narrative work.
-
-### P1 — Startup EDGE
-
-Primary generic grant target for QDIP. DeepTech explicitly includes AI/ML and does not require a defence-specific or LLM-specific reframing.
-
-Target state before the next call opens: 80–90% application readiness, including eligibility assumptions, stage selection, use-of-funds scenarios, milestones, market/traction, team, pitch deck structure and application-answer bank.
-
-Application overlay: `startup-edge/`.
-
-### P2 — Future solo / full-funding calls only
-
-Create a new overlay only when a concrete call is identified and passes the financial/structural gate:
-
-- single applicant permitted;
-- no mandatory consortium;
-- no required own contribution / target funding compatible with the QDIP financing rule;
-- technical scope genuinely fits QDIP without product distortion.
-
-Do not prepare speculative overlays in advance.
-
-## Stopped / inactive targets
-
-Do not spend application-writing effort on these under the current financing/structure gate:
-
-- EIC Pathfinder — mandatory consortium for the relevant route;
-- Eurostars — consortium required;
-- EIC Accelerator — beneficiary contribution required for the grant component under the current target structure;
-- PARP Ścieżka SMART — own contribution required at applicable SME R&D funding intensities.
-
-Existing material may remain as reusable reference material, but these programs are not in the active application queue.
+Do not fork the thesis, benchmark evidence, Canonical Decision IR, core IP position or experiment manifests for a grant.
